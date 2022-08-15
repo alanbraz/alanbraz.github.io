@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://alanbraz.github.io"
+baseURL = "https://alanbraz.com.br"
 languageCode = "en-US"
 title = "About Alan"
 theme = "split"

@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://alanbraz.com.br"
+baseURL = "https://alanbraz.github.io"
 languageCode = "en-US"
 title = "About Alan"
 theme = "split"
@@ -10,7 +10,7 @@ relativeURLs = true
 uglyURLs = true
 
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "G-3KSTQMETGG"
 
 # Copyright
 copyright = "&copy;2022 Alan Braz"
@@ -20,8 +20,8 @@ copyright = "&copy;2022 Alan Braz"
   # Metadata for search engines and social sharing
   author = "Alan Braz"
   description = "I am a Cloud Agile Software DevOps Research Engineer at IBM Research Brazil currently living in Campinas, SP, Brazil. My interests range from coffee to running. I am also interested in design thinking, dogs, basketball and taekwondo."
-  shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
+  shareImage = "images/alan.jpg"
+  twitterHandle = "alanbraz"
 
   # Favicon
   favicon = "favicon.ico"
@@ -35,12 +35,12 @@ copyright = "&copy;2022 Alan Braz"
       file = "images/alan.jpg"
       position = "center center"
 
-    # Video
-    # [params.visual.video]
-    #   enable = false
-    #   mute = true
-    #   file = "videos/background.mp4"
-    #   # youtubeId = "dk9uNWPP7EA"
+    Video
+    [params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      # youtubeId = "dk9uNWPP7EA"
 
   # Links
   #

@@ -52,14 +52,17 @@ copyright = "&copy;2022 Alan Braz"
       [[params.links.list1.link]]
         text = "LinkedIn"
         url = "https://www.linkedin.com/in/alanbraz"
+        new_tab = true
 
       [[params.links.list1.link]]
         text = "GitHub"
         url = "https://github.com/alanbraz"
+        new_tab = true
 
       [[params.links.list1.link]]
         text = "Blog"
         url = "http://alanbraz.wordpress.com/"
+        new_tab = false
 
   # Links List #2
   [[params.links]]

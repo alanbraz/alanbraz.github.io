@@ -35,7 +35,7 @@ copyright = "&copy;2022 Alan Braz"
       file = "images/alan.jpg"
       position = "center center"
 
-    Video
+    # Video
     [params.visual.video]
       enable = false
       mute = true

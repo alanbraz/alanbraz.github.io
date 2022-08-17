@@ -3,4 +3,6 @@ title = "Alan Braz"
 tagline = "Software Engineer, Cloud Developer, Agile Researcher."
 +++
 
-I am a Cloud Agile Software DevOps Research Engineer at IBM Research Brazil currently living in Campinas, SP, Brazil. My interests range from coffee to running. I am also interested in design thinking, dogs, basketball and taekwondo.
+Research Developer specialized in the productization of research projects for Cloud architecture, automating the entire development process with practices (Agile) and tools (DevOps), aiming open-source offers or new products. Master’s in computer science from Unicamp (State University of Campinas - Brazil), with emphasis in Agile Software Engineering. 
+
+My personal interests are eclectic ranging from coffee to running, from design thinking to data mining, from dogs to basketball, and from technical communities to taekwondo.

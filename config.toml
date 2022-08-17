@@ -1,5 +1,4 @@
 # Site settings
-baseURL = "http://alanbraz.com.br"
 languageCode = "en-US"
 title = "About Alan"
 theme = "split"
@@ -60,9 +59,9 @@ copyright = "&copy;2022 Alan Braz"
         new_tab = true
 
       [[params.links.list1.link]]
-        text = "Blog"
-        url = "http://alanbraz.wordpress.com/"
-        new_tab = false
+        text = "Credly"
+        url = "https://www.credly.com/users/alanbraz/badges"
+
 
   # Links List #2
   [[params.links]]
@@ -95,9 +94,9 @@ copyright = "&copy;2022 Alan Braz"
         url = "https://github.com/IBM/AIMMX"
 
       [[params.links.list3.link]]
-        text = "Badges"
-        url = "https://www.credly.com/users/alanbraz/badges"
-
+        text = "Blog - old"
+        url = "http://alanbraz.wordpress.com/"
+        
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
   # If you'd like to use the template without the attribution, you can check out

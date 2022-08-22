@@ -1,6 +1,6 @@
 +++
 title = "Alan Braz"
-tagline = "Software Engineer, Cloud Developer, Agile Researcher."
+tagline = "Software Engineer, Agile Researcher."
 +++
 
 Research Developer specialized in the productization of research projects for Cloud architecture, automating the entire development process with practices (Agile) and tools (DevOps), aiming open-source offers or new products. Master’s in computer science from Unicamp (State University of Campinas - Brazil), with emphasis in Agile Software Engineering. 

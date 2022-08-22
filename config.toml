@@ -9,7 +9,7 @@ relativeURLs = true
 uglyURLs = true
 
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = "G-3KSTQMETGG"
+googleAnalytics = "G-8M63DZS7GD" #MEASUREMENT ID
 
 # Copyright
 copyright = "&copy;2022 Alan Braz"

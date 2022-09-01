@@ -19,7 +19,7 @@ copyright = "&copy;2022 Alan Braz"
   # Metadata for search engines and social sharing
   author = "Alan Braz"
   description = "Research Software Engineer at IBM Research Brazil"
-  shareImage = "images/alan.jpg"
+  shareImage = "images/alan-sm.jpg"
   twitterHandle = "alanbraz"
 
   # Favicon
@@ -31,8 +31,8 @@ copyright = "&copy;2022 Alan Braz"
     # Image
     [params.visual.image]
       enable = true
-      file = "images/alan.jpg"
-      position = "center center"
+      file = "images/alan-sm.jpg"
+      position = "top center"
 
     # Video
     [params.visual.video]
@@ -61,6 +61,7 @@ copyright = "&copy;2022 Alan Braz"
       [[params.links.list1.link]]
         text = "Credly"
         url = "https://www.credly.com/users/alanbraz/badges"
+        new_tab = true
 
 
   # Links List #2
@@ -71,14 +72,17 @@ copyright = "&copy;2022 Alan Braz"
       [[params.links.list2.link]]
         text = "Twitter"
         url = "https://www.twitter.com/alanbraz"
+        new_tab = true
 
       [[params.links.list2.link]]
         text = "Instagram"
         url = "https://www.instagram.com/alanbraz"
+        new_tab = true
 
       [[params.links.list2.link]]
         text = "Facebook"
         url = "https://www.facebook.com/alanbraz/"
+        new_tab = true
 
   # Links List #3
   [[params.links]]
@@ -87,19 +91,23 @@ copyright = "&copy;2022 Alan Braz"
 
       [[params.links.list3.link]]
         text = "InnerSource"
-        url = "innersource.pdf"
+        url = "https://alanbraz.com.br/innersource-tdc/slides.pdf"
+        new_tab = true
 
       [[params.links.list3.link]]
         text = "Pull reCast"
         url = "http://pullrecast.dev"
+        new_tab = true
 
       [[params.links.list3.link]]
         text = "AIMMX"
         url = "https://github.com/IBM/AIMMX"
+        new_tab = true
 
       [[params.links.list3.link]]
         text = "Old blog"
         url = "http://alanbraz.wordpress.com/"
+        new_tab = true
         
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.

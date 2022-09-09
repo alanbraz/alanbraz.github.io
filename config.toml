@@ -1,6 +1,4 @@
 # Site settings
-languageCode = "en-US"
-title = "About Alan"
 theme = "split"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
@@ -14,16 +12,42 @@ googleAnalytics = "G-8M63DZS7GD" #MEASUREMENT ID
 # Copyright
 copyright = "&copy;2022 Alan Braz"
 
-[params]
+# defaultContentLanguageInSubdir = true
+defaultContentLanguage = 'pt-br'
+[languages]
+  [languages.pt-br]
+    title = 'Sobre Alan'
+    # contentDir = 'content/pt-br'
+    languageName = 'Português'
+    # weight = 1
+    [languages.pt-br.params]
+      description = "Engenheiro de Software da área de Pesquisa da IBM Brasil"
+      # [[languages.pt-br.params.links]]
+      #   [languages.pt-br.params.links.list1]
+      #     heading = "Conecte"
 
+  [languages.en]
+    title = 'About Alan'
+    contentDir = 'content/en'
+    languageName = 'English'
+    # weight = 2
+    [languages.en.params]
+      description = "Research Software Engineer at IBM Research Brazil"
+      # [languages.en.params.links.list1]
+      #   heading = "Connect"
+
+
+[params]
   # Metadata for search engines and social sharing
   author = "Alan Braz"
-  description = "Research Software Engineer at IBM Research Brazil"
   shareImage = "images/alan-sm.jpg"
   twitterHandle = "alanbraz"
 
   # Favicon
   favicon = "favicon.ico"
+
+  [params.custom.css]
+    enable = true
 
   # Section - Visual
   [params.visual]
@@ -63,7 +87,6 @@ copyright = "&copy;2022 Alan Braz"
         url = "https://www.credly.com/users/alanbraz/badges"
         new_tab = true
 
-
   # Links List #2
   [[params.links]]
     [params.links.list2]
@@ -90,17 +113,17 @@ copyright = "&copy;2022 Alan Braz"
       heading = "Highlights"
 
       [[params.links.list3.link]]
-        text = "InnerSource"
-        url = "https://alanbraz.com.br/innersource-tdc/slides.pdf"
-        new_tab = true
-
-      [[params.links.list3.link]]
-        text = "Pull reCast"
+        text = "Pull reCast podcast"
         url = "http://pullrecast.dev"
         new_tab = true
 
       [[params.links.list3.link]]
-        text = "AIMMX"
+        text = "InnerSource slides"
+        url = "https://alanbraz.com.br/innersource-tdc/slides.pdf"
+        new_tab = true
+
+      [[params.links.list3.link]]
+        text = "AIMMX project"
         url = "https://github.com/IBM/AIMMX"
         new_tab = true
 

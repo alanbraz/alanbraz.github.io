@@ -1,8 +1,12 @@
 +++
 title = "Alan Braz"
-tagline = "Software Engineer, Agile Researcher."
+tagline = "Engenheiro de Software, Pesquisador em Agilidade."
 +++
 
-Research Developer specialized in the productization of research projects for Cloud architecture, automating the entire development process with practices (Agile) and tools (DevOps), aiming open-source offers or new products. Master’s in computer science from Unicamp (State University of Campinas - Brazil), with emphasis in Agile Software Engineering. 
+ Desenvolvedor de Software Sênior na IBM Research atuando na produtização de projetos de pesquisa para arquitetura em nuvem, automatizando todo o processo de desenvolvimento com práticas (Agile) e ferramentas (DevOps), visando ofertas open-source ou novos produtos. Mestre em Ciência da Computação pela Unicamp, com ênfase em Engenharia de Software Ágil.
 
-My personal interests are eclectic ranging from coffee to running, from design thinking to data mining, from dogs to basketball, and from technical communities to taekwondo.
+Meus interesses pessoais são bem ecléticos variando de café à corrida, design thinking à mineração de dados, cachorros à basquetebol, e comunidades técnicas à taekwondo.
+
+<!-- Anteriormente atuou como Desenvolvedor e Arquiteto na IBM Consulting, depois migrou para a IBM Research como Engenheiro de Software em projetos de BigData com dados de mídia social. Também trabalhou por dois anos e meio em Yorktown/NY com ferramentas para Cientistas de Dados e mineração de repositórios de software. -->
+
+ [English version](/en)

@@ -1,0 +1,15 @@
+.tagline {
+    font-size: 0.7em;
+    line-height: 1.2em;
+}
+
+.split-bio {
+    font-size: 0.9em;
+}
+
+
+.split-bio a {
+    font-size: 0.8em;
+    /* float: right;
+    display: block; */
+}

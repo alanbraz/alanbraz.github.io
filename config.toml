@@ -70,7 +70,7 @@ defaultContentLanguage = 'pt-br'
   # Links List #1
   [[params.links]]
     [params.links.list1]
-      heading = "Connect"
+      heading = "Social"
 
       [[params.links.list1.link]]
         text = "LinkedIn"
@@ -78,34 +78,45 @@ defaultContentLanguage = 'pt-br'
         new_tab = true
 
       [[params.links.list1.link]]
-        text = "GitHub"
-        url = "https://github.com/alanbraz"
+        text = "Twitter"
+        url = "https://www.twitter.com/alanbraz"
         new_tab = true
 
       [[params.links.list1.link]]
-        text = "Credly"
-        url = "https://www.credly.com/users/alanbraz/badges"
+        text = "Instagram"
+        url = "https://www.instagram.com/alanbraz"
+        new_tab = true
+
+      [[params.links.list1.link]]
+        text = "Facebook"
+        url = "https://www.facebook.com/alanbraz/"
         new_tab = true
 
   # Links List #2
   [[params.links]]
     [params.links.list2]
-      heading = "Social"
+      heading = "Professional"
 
       [[params.links.list2.link]]
-        text = "Twitter"
-        url = "https://www.twitter.com/alanbraz"
+        text = "ResearchGate"
+        url = "https://www.researchgate.net/profile/Alan-Braz-2"
         new_tab = true
 
       [[params.links.list2.link]]
-        text = "Instagram"
-        url = "https://www.instagram.com/alanbraz"
+        text = "GitHub"
+        url = "https://github.com/alanbraz"
         new_tab = true
 
       [[params.links.list2.link]]
-        text = "Facebook"
-        url = "https://www.facebook.com/alanbraz/"
+        text = "Google Scholar"
+        url = "https://scholar.google.com.br/citations?user=BZujm7MAAAAJ"
         new_tab = true
+
+      [[params.links.list2.link]]
+        text = "Credly"
+        url = "https://www.credly.com/users/alanbraz/badges"
+        new_tab = true
+      
 
   # Links List #3
   [[params.links]]

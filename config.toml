@@ -22,9 +22,6 @@ defaultContentLanguage = 'pt-br'
     # weight = 1
     [languages.pt-br.params]
       description = "Engenheiro de Software da área de Pesquisa da IBM Brasil"
-      # [[languages.pt-br.params.links]]
-      #   [languages.pt-br.params.links.list1]
-      #     heading = "Conecte"
 
   [languages.en]
     title = 'About Alan'
@@ -33,9 +30,6 @@ defaultContentLanguage = 'pt-br'
     # weight = 2
     [languages.en.params]
       description = "Research Software Engineer at IBM Research Brazil"
-      # [languages.en.params.links.list1]
-      #   heading = "Connect"
-
 
 [params]
   # Metadata for search engines and social sharing
@@ -98,13 +92,13 @@ defaultContentLanguage = 'pt-br'
       heading = "Professional"
 
       [[params.links.list2.link]]
-        text = "ResearchGate"
-        url = "https://www.researchgate.net/profile/Alan-Braz-2"
+        text = "GitHub"
+        url = "https://github.com/alanbraz"
         new_tab = true
 
       [[params.links.list2.link]]
-        text = "GitHub"
-        url = "https://github.com/alanbraz"
+        text = "ResearchGate"
+        url = "https://www.researchgate.net/profile/Alan-Braz-2"
         new_tab = true
 
       [[params.links.list2.link]]

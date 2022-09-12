@@ -49,7 +49,7 @@ defaultContentLanguage = 'pt-br'
     # Image
     [params.visual.image]
       enable = true
-      file = "images/alan-sm.jpg"
+      file = "images/alan-md.jpg"
       position = "top center"
 
     # Video

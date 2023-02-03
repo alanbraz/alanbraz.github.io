@@ -1,3 +1,5 @@
+baseURL = "https://alanbraz.com.br"
+
 # Site settings
 theme = "split"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
@@ -10,7 +12,7 @@ uglyURLs = true
 googleAnalytics = "G-8M63DZS7GD" #MEASUREMENT ID
 
 # Copyright
-copyright = "&copy;2022 Alan Braz"
+copyright = "&copy;2023 Alan Braz"
 
 # defaultContentLanguageInSubdir = true
 defaultContentLanguage = 'pt-br'
@@ -92,6 +94,11 @@ defaultContentLanguage = 'pt-br'
       heading = "Professional"
 
       [[params.links.list2.link]]
+        text = "IBM Research"
+        url = "https://researcher.ibm.com/researcher/view.php?person=br-alanbraz"
+        new_tab = true
+
+      [[params.links.list2.link]]
         text = "GitHub"
         url = "https://github.com/alanbraz"
         new_tab = true
@@ -106,10 +113,10 @@ defaultContentLanguage = 'pt-br'
         url = "https://scholar.google.com.br/citations?user=BZujm7MAAAAJ"
         new_tab = true
 
-      [[params.links.list2.link]]
-        text = "Credly"
-        url = "https://www.credly.com/users/alanbraz/badges"
-        new_tab = true
+      # [[params.links.list2.link]]
+      #   text = "Credly"
+      #   url = "https://www.credly.com/users/alanbraz/badges"
+      #   new_tab = true
       
 
   # Links List #3

@@ -95,7 +95,7 @@ defaultContentLanguage = 'pt-br'
 
       [[params.links.list2.link]]
         text = "IBM Research"
-        url = "https://researcher.ibm.com/researcher/view.php?person=br-alanbraz"
+        url = "https://research.ibm.com/people/alan-braz"
         new_tab = true
 
       [[params.links.list2.link]]

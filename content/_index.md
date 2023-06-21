@@ -9,4 +9,6 @@ tagline = "Engenheiro de Software, Pesquisador em Agilidade."
 
 <!-- Anteriormente atuou como Desenvolvedor e Arquiteto na IBM Consulting, depois migrou para a IBM Research como Engenheiro de Software em projetos de BigData com dados de mídia social. Também trabalhou por dois anos e meio em Yorktown/NY com ferramentas para Cientistas de Dados e mineração de repositórios de software. -->
 
- [English version](/en)
+ [English version](/en) 
+
+ _Fotógrafo [Pedro Pavanato](https://pedropavanato.com.br/)_

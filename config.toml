@@ -74,19 +74,24 @@ defaultContentLanguage = 'pt-br'
         new_tab = true
 
       [[params.links.list1.link]]
+        text = "GitHub"
+        url = "https://github.com/alanbraz"
+        new_tab = true
+        
+      [[params.links.list1.link]]
         text = "Twitter"
         url = "https://www.twitter.com/alanbraz"
         new_tab = true
 
-      [[params.links.list1.link]]
-        text = "Instagram"
-        url = "https://www.instagram.com/alanbraz"
-        new_tab = true
+      # [[params.links.list1.link]]
+      #   text = "Instagram"
+      #   url = "https://www.instagram.com/alanbraz"
+      #   new_tab = true
 
-      [[params.links.list1.link]]
-        text = "Facebook"
-        url = "https://www.facebook.com/alanbraz/"
-        new_tab = true
+      # [[params.links.list1.link]]
+      #   text = "Facebook"
+      #   url = "https://www.facebook.com/alanbraz/"
+      #   new_tab = true
 
   # Links List #2
   [[params.links]]
@@ -94,23 +99,18 @@ defaultContentLanguage = 'pt-br'
       heading = "Professional"
 
       [[params.links.list2.link]]
-        text = "IBM Research"
+        text = "IBM Research profile"
         url = "https://research.ibm.com/people/alan-braz"
-        new_tab = true
-
-      [[params.links.list2.link]]
-        text = "GitHub"
-        url = "https://github.com/alanbraz"
-        new_tab = true
-
-      [[params.links.list2.link]]
-        text = "ResearchGate"
-        url = "https://www.researchgate.net/profile/Alan-Braz-2"
         new_tab = true
 
       [[params.links.list2.link]]
         text = "Google Scholar"
         url = "https://scholar.google.com.br/citations?user=BZujm7MAAAAJ"
+        new_tab = true
+
+      [[params.links.list2.link]]
+        text = "ResearchGate"
+        url = "https://www.researchgate.net/profile/Alan-Braz-2"
         new_tab = true
 
       # [[params.links.list2.link]]
@@ -125,24 +125,24 @@ defaultContentLanguage = 'pt-br'
       heading = "Highlights"
 
       [[params.links.list3.link]]
-        text = "Pull reCast podcast"
+        text = "PullreCast podcast"
         url = "http://pullrecast.dev"
         new_tab = true
 
       [[params.links.list3.link]]
-        text = "InnerSource slides"
-        url = "https://alanbraz.com.br/innersource-tdc/slides.pdf"
+        text = "watsonx Brasil"
+        url = "http://ibm.biz/watsonx-br"
         new_tab = true
-
+        
       [[params.links.list3.link]]
         text = "AIMMX project"
         url = "https://github.com/IBM/AIMMX"
         new_tab = true
 
-      [[params.links.list3.link]]
-        text = "Old blog"
-        url = "http://alanbraz.wordpress.com/"
-        new_tab = true
+      # [[params.links.list3.link]]
+      #   text = "Old blog"
+      #   url = "http://alanbraz.wordpress.com/"
+      #   new_tab = true
         
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.

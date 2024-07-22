@@ -13,7 +13,7 @@ Slides:
 ### Extra links:
 
 - [Demo do watsonx.ai](https://ibm.biz/wx-chat-demo)
-- [intructlab.ai](http://intructlab.ai)
+- [instructlab.ai](http://instructlab.ai)
 - [watsonx.data - Pipeline de dados do modelo Granite](https://www.youtube.com/watch?v=BFtsSDHulVM)
 - [Comunidade do watsonx Brasil](https://ibm.biz/watsonx-br)
 - [Podcast Pull reCast](http://pullrecast.dev)

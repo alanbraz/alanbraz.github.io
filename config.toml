@@ -12,7 +12,7 @@ uglyURLs = true
 googleAnalytics = "G-8M63DZS7GD" #MEASUREMENT ID
 
 # Copyright
-copyright = "&copy;2023 Alan Braz"
+copyright = "&copy;2024 Alan Braz"
 
 # defaultContentLanguageInSubdir = true
 defaultContentLanguage = 'pt-br'
@@ -27,7 +27,7 @@ defaultContentLanguage = 'pt-br'
 
   [languages.en]
     title = 'About Alan'
-    contentDir = 'content/en'
+    contentDir = 'content/english'
     languageName = 'English'
     # weight = 2
     [languages.en.params]
@@ -64,9 +64,34 @@ defaultContentLanguage = 'pt-br'
   # Links
   #
   # Links List #1
+  # [[params.links]]
+  #   [params.links.list1]
+  #     heading = "Social"
+
+  #     [[params.links.list1.link]]
+  #       text = "LinkedIn"
+  #       url = "https://www.linkedin.com/in/alanbraz"
+  #       new_tab = true
+
+  #     [[params.links.list1.link]]
+  #       text = "Twitter"
+  #       url = "https://www.twitter.com/alanbraz"
+  #       new_tab = true
+
+  #     [[params.links.list1.link]]
+  #       text = "Instagram"
+  #       url = "https://www.instagram.com/alanbraz"
+  #       new_tab = true
+
+  #     [[params.links.list1.link]]
+  #       text = "Facebook"
+  #       url = "https://www.facebook.com/alanbraz/"
+  #       new_tab = true
+
+  # Links List #2
   [[params.links]]
     [params.links.list1]
-      heading = "Social"
+      heading = "Professional"
 
       [[params.links.list1.link]]
         text = "LinkedIn"
@@ -74,41 +99,21 @@ defaultContentLanguage = 'pt-br'
         new_tab = true
 
       [[params.links.list1.link]]
-        text = "Twitter"
-        url = "https://www.twitter.com/alanbraz"
-        new_tab = true
-
-      [[params.links.list1.link]]
-        text = "Instagram"
-        url = "https://www.instagram.com/alanbraz"
-        new_tab = true
-
-      [[params.links.list1.link]]
-        text = "Facebook"
-        url = "https://www.facebook.com/alanbraz/"
-        new_tab = true
-
-  # Links List #2
-  [[params.links]]
-    [params.links.list2]
-      heading = "Professional"
-
-      [[params.links.list2.link]]
         text = "IBM Research"
         url = "https://research.ibm.com/people/alan-braz"
         new_tab = true
 
-      [[params.links.list2.link]]
+      [[params.links.list1.link]]
         text = "GitHub"
         url = "https://github.com/alanbraz"
         new_tab = true
 
-      [[params.links.list2.link]]
+      [[params.links.list1.link]]
         text = "ResearchGate"
         url = "https://www.researchgate.net/profile/Alan-Braz-2"
         new_tab = true
 
-      [[params.links.list2.link]]
+      [[params.links.list1.link]]
         text = "Google Scholar"
         url = "https://scholar.google.com.br/citations?user=BZujm7MAAAAJ"
         new_tab = true
@@ -121,29 +126,63 @@ defaultContentLanguage = 'pt-br'
 
   # Links List #3
   [[params.links]]
-    [params.links.list3]
+    [params.links.list2]
       heading = "Highlights"
 
-      [[params.links.list3.link]]
+      [[params.links.list2.link]]
         text = "Pull reCast podcast"
         url = "http://pullrecast.dev"
         new_tab = true
 
-      [[params.links.list3.link]]
-        text = "InnerSource slides"
-        url = "https://alanbraz.com.br/innersource-tdc/slides.pdf"
+      [[params.links.list2.link]]
+        text = "Comunidade IBM TechXchange Brasil watsonx"
+        url = "https://ibm.biz/watsonx-br"
         new_tab = true
 
-      [[params.links.list3.link]]
+      [[params.links.list2.link]]
+        text = "Aprenda IA Generativa com IBM watsonx.ai na prática"
+        url = "https://www.youtube.com/watch?v=jzPjIUhNXkM"
+        new_tab = true
+
+      [[params.links.list2.link]]
         text = "AIMMX project"
         url = "https://github.com/IBM/AIMMX"
         new_tab = true
 
+  [[params.links]]
+    [params.links.list3]
+      heading = "Talks"
+
       [[params.links.list3.link]]
-        text = "Old blog"
-        url = "http://alanbraz.wordpress.com/"
+        text = "Hipsters: Fora de Controle #42"
+        url = "https://open.spotify.com/episode/6YvUNfYY3nkbNgXN5LJHU9?si=uPbtu7FoTz63kw369_qvmg&t=1515"
         new_tab = true
-        
+
+      [[params.links.list3.link]]
+        text = "Entrevista IA JP News Campians"
+        url = "https://www.youtube.com/watch?v=Cbixa3LSXCk"
+        new_tab = true
+
+      [[params.links.list3.link]]
+        text = "Seminário Internacional Human AI"
+        url = "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s"
+        new_tab = true
+
+      [[params.links.list3.link]]
+        text = "CM Summit - TLC-BR Comunidade Técnica da IBM"
+        url = "https://www.youtube.com/watch?v=EBis9aTsHio&t=33740s"
+        new_tab = true
+
+      # [[params.links.list3.link]]
+      #   text = "InnerSource slides"
+      #   url = "https://alanbraz.com.br/innersource-tdc/slides.pdf"
+      #   new_tab = true
+
+      # [[params.links.list3.link]]
+      #   text = "Old blog"
+      #   url = "http://alanbraz.wordpress.com/"
+      #   new_tab = true 
+
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
   # If you'd like to use the template without the attribution, you can check out

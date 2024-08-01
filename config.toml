@@ -36,7 +36,7 @@ defaultContentLanguage = 'pt-br'
 [params]
   # Metadata for search engines and social sharing
   author = "Alan Braz"
-  shareImage = "images/alan-sm.jpg"
+  shareImage = "images/exame-sm.jpg"
   twitterHandle = "alanbraz"
 
   # Favicon
@@ -51,14 +51,14 @@ defaultContentLanguage = 'pt-br'
     # Image
     [params.visual.image]
       enable = true
-      file = "images/alan-md.jpg"
+      file = "images/exame.jpg"
       position = "top center"
 
     # Video
-    [params.visual.video]
-      enable = false
-      mute = true
-      file = "videos/background.mp4"
+    # [params.visual.video]
+    #   enable = false
+    #   mute = true
+    #   file = "videos/background.mp4"
       # youtubeId = "dk9uNWPP7EA"
 
   # Links

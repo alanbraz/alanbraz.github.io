@@ -3,9 +3,11 @@ title = "Alan Braz"
 tagline = "Desenvolvedor de Software, Pesquisador e palestrante de Inteligência Artificial."
 +++
 
-Desenvolvedor de Software Sênior na IBM Research (Pesquisa) atuando na transformação de projetos de pesquisa para produtos em nuvem híbrida, liderando equipes e automatizando o processo de desenvolvimento com práticas ágeis (Agile) e ferramentas (DevOps), visando ofertas open-source ou novos produtos. \
+Líder de Desenvolvimento na IBM Research (Pesquisa) atuando na transformação de projetos de pesquisa para produtos em nuvem híbrida, liderando equipes e automatizando o processo de desenvolvimento com práticas ágeis (Agile) e ferramentas (DevOps), visando ofertas open-source ou novos produtos como o [IBM watsonx.ai](https://www.ibm.com/br-pt/products/watsonx-ai). 
 Mestre em Ciência da Computação pela Unicamp, com ênfase em Engenharia de Software Ágil. \
-Apresentador do podcast [PullreCast](http://canal.pullrecast.dev) falando sobre o impacto da Inteligência Artificial nas carreiras de tecnologia e nos negócios!
+Apresentador do podcast [PullreCast](http://canal.pullrecast.dev) falando sobre o impacto da Inteligência Artificial nas carreiras de tecnologia e nos negócios! 
+
+## **Contato para palestras e mentorias [alan@pullrecast.dev](mailto:alan@pullrecast.dev)**
 
 <!-- Meus interesses pessoais são bem ecléticos variando de café à corrida, design thinking à mineração de dados, cachorros à basquetebol, e comunidades técnicas à taekwondo. -->
 

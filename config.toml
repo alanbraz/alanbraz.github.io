@@ -153,6 +153,12 @@ defaultContentLanguage = 'pt-br'
     [params.links.list3]
       heading = "Talks"
 
+      
+      [[params.links.list3.link]]
+        text = "HackTown 2024"
+        url = "https://link.pullrecast.dev/hacktown24"
+        new_tab = true
+        
       [[params.links.list3.link]]
         text = "Hipsters: Fora de Controle #42"
         url = "https://open.spotify.com/episode/6YvUNfYY3nkbNgXN5LJHU9?si=uPbtu7FoTz63kw369_qvmg&t=1515"

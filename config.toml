@@ -94,6 +94,11 @@ defaultContentLanguage = 'pt-br'
       heading = "Professional"
 
       [[params.links.list1.link]]
+        text = "Agende sua MentorIA aqui"
+        url = "https://www.calendly.com/alanbraz"
+        new_tab = true
+
+      [[params.links.list1.link]]
         text = "LinkedIn"
         url = "https://www.linkedin.com/in/alanbraz"
         new_tab = true

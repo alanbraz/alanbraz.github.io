@@ -1,38 +1,44 @@
-baseURL = "https://alanbraz.com.br"
-
 # Site settings
+baseURL = "https://alanbraz.com.br"
+languageCode = "pt-BR"
 theme = "split"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
+disableHugoGeneratorInject = true
 
 # Local preview mode
 relativeURLs = true
 uglyURLs = true
 
-# Enter your tracking code to enable Google Analytics
-[config]
-  [services]
-    [googleAnalytics]
-      id = "G-8M63DZS7GD"
-
 # Copyright
 copyright = "&copy;2024 Alan Braz"
 
-# defaultContentLanguageInSubdir = true
-defaultContentLanguage = 'pt-br'
+[services]
+  [services.googleAnalytics]
+      ID = "G-8M63DZS7GD"
+
+defaultContentLanguage = 'pt'
+defaultContentLanguageInSubdir = true
+
 [languages]
-  [languages.pt-br]
+  [languages.pt]
     title = 'Sobre Alan'
-    # contentDir = 'content/pt-br'
+    disabled = false
+    languageCode = 'pt-BR'
+    languageDirection = 'ltr'
     languageName = 'Português'
-    # weight = 1
-    [languages.pt-br.params]
+    contentDir = 'content/br'
+    weight = 10
+    [languages.pt.params]
       description = "Engenheiro de Software da área de Pesquisa da IBM Brasil"
 
   [languages.en]
-    title = 'About Alan'
-    contentDir = 'content/english'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
     languageName = 'English'
-    # weight = 2
+    weight = 200
+    title = 'About Alan'
+    contentDir = 'content/en'
     [languages.en.params]
       description = "Research Software Engineer at IBM Research Brazil"
 
@@ -201,3 +207,13 @@ defaultContentLanguage = 'pt-br'
   # Please keep the original attribution link when using for your own project.
   # If you'd like to use the template without the attribution, you can check out
   # the license option via the template author's website: https://onepagelove.com/split
+
+[server]
+[[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com"
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'DENY'
+      X-XSS-Protection = '1; mode=block'

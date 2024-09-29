@@ -13,4 +13,4 @@ Apresentador do podcast [PullreCast](http://canal.pullrecast.dev) falando sobre 
 
 <!-- Anteriormente atuou como Desenvolvedor e Arquiteto na IBM Consulting, depois migrou para a IBM Research como Engenheiro de Software em projetos de BigData com dados de mídia social. Também trabalhou por dois anos e meio em Yorktown/NY com ferramentas para Cientistas de Dados e mineração de repositórios de software. -->
 
-_[Fotógrafo Pedro Pavanato](https://pedropavanato.com.br/)_ | [English version](en)
+_[Fotógrafo Pedro Pavanato](https://pedropavanato.com.br/)_ | [English version](/en)

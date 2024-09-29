@@ -7,4 +7,4 @@ Research Developer specialized in the productization of research projects for Cl
 
 <!-- My personal interests are eclectic ranging from coffee to running, from design thinking to data mining, from dogs to basketball, and from technical communities to taekwondo. -->
 
- _[Photographer Pedro Pavanato](https://pedropavanato.com.br/)_ | [Versão em Português](/pt-br)
+ _[Photographer Pedro Pavanato](https://pedropavanato.com.br/)_ | [Versão em Português](/br)

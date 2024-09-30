@@ -16,11 +16,11 @@ copyright = "&copy;2024 Alan Braz"
   [services.googleAnalytics]
       ID = "G-8M63DZS7GD"
 
-defaultContentLanguage = 'pt'
+defaultContentLanguage = 'br'
 defaultContentLanguageInSubdir = true
 
 [languages]
-  [languages.pt]
+  [languages.br]
     title = 'Sobre Alan'
     disabled = false
     languageCode = 'pt-BR'
@@ -28,7 +28,7 @@ defaultContentLanguageInSubdir = true
     languageName = 'Português'
     contentDir = 'content/br'
     weight = 10
-    [languages.pt.params]
+    [languages.br.params]
       description = "Engenheiro de Software da área de Pesquisa da IBM Brasil"
 
   [languages.en]

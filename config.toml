@@ -174,8 +174,8 @@ defaultContentLanguageInSubdir = true
         new_tab = true
         
       [[params.links.list3.link]]
-        text = "Hipsters: Fora de Controle #42"
-        url = "https://open.spotify.com/episode/6YvUNfYY3nkbNgXN5LJHU9?si=uPbtu7FoTz63kw369_qvmg&t=1515"
+        text = "IA Sob Controle podcast #42"
+        url = "https://www.iasobcontrole.tech/42-novos-modelos-de-embedding-da-openai-deepfake-do-biden-ia-na-ibm/"
         new_tab = true
 
       [[params.links.list3.link]]

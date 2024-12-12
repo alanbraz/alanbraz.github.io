@@ -150,7 +150,7 @@ defaultContentLanguageInSubdir = true
 
       [[params.links.list2.link]]
         text = "Comunidade IBM TechXchange Brasil watsonx"
-        url = "https://ibm.biz/watsonx-br"
+        url = "https://link.pullrecast.dev/wx-br"
         new_tab = true
 
       [[params.links.list2.link]]

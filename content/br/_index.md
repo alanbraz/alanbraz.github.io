@@ -1,6 +1,6 @@
 +++
 title = "Alan Braz"
-tagline = "Desenvolvedor de Software, Pesquisador e palestrante de Inteligência Artificial."
+tagline = "Desenvolvedor de Software, Pesquisador, palestrante e mentor de Inteligência Artificial."
 +++
 
 Líder de Desenvolvimento na IBM Research (Pesquisa) atuando na transformação de projetos de pesquisa para produtos em nuvem híbrida, liderando equipes e automatizando o processo de desenvolvimento com práticas ágeis (Agile) e ferramentas (DevOps), visando ofertas open-source ou novos produtos como o [IBM watsonx.ai](https://www.ibm.com/br-pt/products/watsonx-ai). 

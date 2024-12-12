@@ -45,7 +45,7 @@ defaultContentLanguageInSubdir = true
 [params]
   # Metadata for search engines and social sharing
   author = "Alan Braz"
-  shareImage = "images/exame-sm.jpg"
+  shareImage = "images/exame-prc-sm.jpg"
   twitterHandle = "alanbraz"
 
   # Favicon
@@ -60,7 +60,7 @@ defaultContentLanguageInSubdir = true
     # Image
     [params.visual.image]
       enable = true
-      file = "images/exame.jpg"
+      file = "images/alan-prc.jpg"
       position = "top center"
 
     # Video

@@ -174,7 +174,7 @@ defaultContentLanguageInSubdir = true
 
       [[params.links.list3.link]]
         text = "Vida com IA #103"
-        url = "https://open.spotify.com/episode/40pdjHdfCbNQ7ayBo9f60Q
+        url = "https://open.spotify.com/episode/40pdjHdfCbNQ7ayBo9f60Q"
         new_tab = true
         
       # [[params.links.list3.link]]

@@ -169,7 +169,7 @@ defaultContentLanguageInSubdir = true
 
       [[params.links.list3.link]]
         text = "CNEX - Preparando-se para o Futuro"
-        url = "https://link.pullrecast.dev/cnex25"
+        url = "https://alanbraz.com.br/futuro-da-ia-short.pdf"
         new_tab = true
 
       [[params.links.list3.link]]

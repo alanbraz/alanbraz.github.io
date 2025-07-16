@@ -144,7 +144,7 @@ defaultContentLanguageInSubdir = true
       heading = "Highlights"
 
       [[params.links.list2.link]]
-        text = "Pull reCast podcast"
+        text = "PullreCast podcast"
         url = "http://pullrecast.dev"
         new_tab = true
 
@@ -162,25 +162,30 @@ defaultContentLanguageInSubdir = true
         text = "AIMMX project"
         url = "https://github.com/IBM/AIMMX"
         new_tab = true
+      
+      [[params.links.list2.link]]
+        text = "CM Summit - TLC-BR Comunidade Técnica da IBM"
+        url = "https://www.youtube.com/watch?v=EBis9aTsHio&t=33740s"
+        new_tab = true
 
   [[params.links]]
     [params.links.list3]
       heading = "Talks"
 
       [[params.links.list3.link]]
-        text = "CNEX - Preparando-se para o Futuro"
-        url = "https://alanbraz.com.br/futuro-da-ia-short.pdf"
+        text = "OVNI - Agentes de IA e o Futuro da tecnologia"
+        url = "https://alanbraz.com.br/ovni.pdf"
+        new_tab = true
+      
+      [[params.links.list3.link]]
+        text = "IA Sob Controle podcast #162"
+        url = "https://www.iasobcontrole.tech/162-o-que-a-ibm-vem-fazendo-pelo-mercado-de-la-com-alan-braz/"
         new_tab = true
 
       [[params.links.list3.link]]
         text = "Vida com IA #103"
         url = "https://open.spotify.com/episode/40pdjHdfCbNQ7ayBo9f60Q"
         new_tab = true
-        
-      # [[params.links.list3.link]]
-      #   text = "HackTown 2024"
-      #   url = "https://link.pullrecast.dev/hacktown24"
-      #   new_tab = true
         
       [[params.links.list3.link]]
         text = "IA Sob Controle podcast #42"
@@ -197,10 +202,7 @@ defaultContentLanguageInSubdir = true
         url = "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s"
         new_tab = true
 
-      [[params.links.list3.link]]
-        text = "CM Summit - TLC-BR Comunidade Técnica da IBM"
-        url = "https://www.youtube.com/watch?v=EBis9aTsHio&t=33740s"
-        new_tab = true
+      
 
       # [[params.links.list3.link]]
       #   text = "InnerSource slides"

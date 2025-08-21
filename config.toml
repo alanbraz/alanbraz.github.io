@@ -173,8 +173,8 @@ defaultContentLanguageInSubdir = true
       heading = "Talks"
 
       [[params.links.list3.link]]
-        text = "OVNI - Agentes de IA e o Futuro da tecnologia"
-        url = "https://alanbraz.com.br/ovni.pdf"
+        text = "CNEX - Preparando-se para o Futuro!"
+        url = "https://alanbraz.com.br/cnex preparando-se para o futuro.pdf"
         new_tab = true
       
       [[params.links.list3.link]]

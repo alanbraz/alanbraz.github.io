@@ -26,6 +26,7 @@ import {
   Music,
   MessageCircle
 } from 'lucide-react';
+import speakerImg from './assets/speaker.jpg';
 
 // --- Data & Content Configuration ---
 const DATA = {
@@ -613,7 +614,7 @@ export default function AlanBrazPortfolio() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden shadow-2xl">
                 <img 
-                  src="./src/assets/speaker.jpg" 
+                  src={speakerImg} 
                   alt="Alan Braz Speaking at IBM Research Forum" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   onError={(e) => {

@@ -566,7 +566,7 @@ const ExperienceItem = ({ item, isLast }) => (
 );
 
 export default function AlanBrazPortfolio() {
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('pt');
   const [darkMode, setDarkMode] = useState(false);
   const t = DATA[lang];
 

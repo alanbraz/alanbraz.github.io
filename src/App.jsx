@@ -32,36 +32,36 @@ import speakerImg from './assets/speaker.jpg';
 const DATA = {
   en: {
     nav: {
-      about: "The Mission",
-      projects: "Projects",
+      about: "Mission",
+      projects: "Impact",
       media: "Signals",
       teaching: "Teaching",
-      contact: "Contact"
+      contact: "Mentoring"
     },
     podcast_feed: {
-      title: "Latest Transmissions",
-      subtitle: "Direct from the Source",
-      listen: "Listen Transmission",
-      loading: "Establishing connection...",
-      error: "Signal interrupted. Unable to load feed."
+      title: "Recent Signals",
+      subtitle: "Field notes & broadcasts",
+      listen: "Listen now",
+      loading: "Fetching latest signal...",
+      error: "Signal lost. Unable to load feed."
     },
     hero: {
-      role: "Engineering Manager Driven by Challenges",
-      subrole: "Taming Chaos & Architecting AI",
-      cta: "See How I Solve Problems"
+      role: "Technology Executive in Deep Tech",
+      subrole: "Where software engineering, applied science, and business value converge.",
+      cta: "See how I build defensible technology"
     },
     about: {
-      title: "The Tech-Business Translator",
-      text: "I bridge the impossible gap between deep research and real-world impact. My superpower is translating complex technical concepts into clear, actionable business strategies. I lead teams to conquer 'insoluble' problems in AI and Cloud Architecture, ensuring that cutting-edge innovation makes sense for the enterprise. If it's complex, undefined, and difficult, that's where I thrive."
+      title: "Engineering for Market Impact",
+      text: "I operate where software engineering meets complex science and generative AI shifts from research to product. My career is built on turning impractical ideas or so-called impossible problems into scalable, profitable technology. I design engineering cultures that value rigor, open-source collaboration, and autonomy to ship the future, not just manage it."
     },
     stats: [
-      { label: "Impactful Talks", value: "100+", icon: <Megaphone size={20} /> },
-      { label: "Patents Won", value: "15+", icon: <Award size={20} /> },
-      { label: "Complex Papers", value: "18+", icon: <FileText size={20} /> },
-      { label: "Years in the Trenches", value: "20+", icon: <Terminal size={20} /> },
+      { label: "High-stakes keynotes", value: "100+", icon: <Megaphone size={20} /> },
+      { label: "Patents & disclosures", value: "15+", icon: <Award size={20} /> },
+      { label: "Peer-reviewed papers", value: "18+", icon: <FileText size={20} /> },
+      { label: "Years building systems", value: "20+", icon: <Terminal size={20} /> },
     ],
     eminence: {
-      title: "Victories & Recognition",
+      title: "Technical Eminence",
       items: [
         { 
           title: "IBM Tech 2024", 
@@ -77,46 +77,46 @@ const DATA = {
       ]
     },
     media: {
-      title: "Industry Signals",
+      title: "Signals from the Field",
       items: [
         {
-          title: "TDC: Humanized Leadership & AI",
-          desc: "Live at The Developer's Conference. Discussing the impact of AI on companies and the future of leadership.",
-          type: "Conference / Video",
+          title: "TDC: Engineering Leadership with AI",
+          desc: "On stage at The Developer's Conference detailing how to structure AI programs that survive real-world constraints.",
+          type: "Webnair",
           link: "https://www.youtube.com/watch?v=SwQ7JCMaQ9g",
           icon: <Video size={20} className="text-red-600" />
         },
         {
           title: "IA Sob Controle #162",
-          desc: "What IBM is doing for the AI Market. A deep conversation about strategy and innovation.",
+          desc: "Deconstructing IBM's strategy for the AI market and the disciplines needed to ship products, not slides.",
           type: "Podcast",
           link: "https://www.iasobcontrole.tech/162-o-que-a-ibm-vem-fazendo-pelo-mercado-de-la-com-alan-braz/",
           icon: <Mic size={20} className="text-pink-500" />
         },
         {
           title: "Rádio Brasil Interview",
-          desc: "Overview of AI impact on society and business. (Video Interview)",
-          type: "TV/Radio",
+          desc: "How frontier AI changes business models and why governance must be engineered, not improvised.",
+          type: "TV / Radio",
           link: "https://www.youtube.com/watch?v=Cbixa3LSXCk",
           icon: <Radio size={20} className="text-blue-500" />
         },
         {
           title: "PUC-Campinas Seminar",
-          desc: "Human AI & Education International Seminar. Discussing the future of learning.",
-          type: "Keynote",
+          desc: "Human AI & Education: turning academic research into resilient AI systems for industry.",
+          type: "Panel",
           link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
           icon: <Video size={20} className="text-red-500" />
         },
         {
           title: "IA Sob Controle #42",
-          desc: "OpenAI Embeddings, Biden Deepfake, and AI at IBM. Navigating the noise.",
+          desc: "On shipping AI responsibly: embeddings, deepfakes, and the engineering behind IBM's approach.",
           type: "Podcast",
           link: "https://www.iasobcontrole.tech/42-novos-modelos-de-embedding-da-openai-deepfake-do-biden-ia-na-ibm/",
           icon: <Mic size={20} className="text-pink-500" />
         },
         {
           title: "Vida com IA #103",
-          desc: "Deep dive into AI Engineering and career insights.",
+          desc: "A technical deep dive into AI engineering and how to navigate a career at the frontier.",
           type: "Podcast",
           link: "https://open.spotify.com/episode/40pdjHdfCbNQ7ayBo9f60Q",
           icon: <Play size={20} className="text-green-500" />
@@ -124,108 +124,108 @@ const DATA = {
       ]
     },
     logos: {
-      title: "Where I've Spoken",
+      title: "Stages & Classrooms",
       items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "IA Sob Controle", "The Developer's Conference", "CBSoft", "Klabin", "John Deere", "Grupo Brinox"]
     },
     projects: {
-      title: "Solving the Unsolvable",
+      title: "Shipping Hard Tech",
       items: [
         {
           title: "PullreCast Podcast",
-          desc: "Breaking down the most complex barriers in Open-Source AI. A deep dive into the bleeding edge of productivity and career growth where technical depth meets strategy.",
-          tags: ["Podcast", "GenAI", "Strategy"],
-          link: "#",
+          desc: "Deconstructing how frontier AI becomes enterprise advantage. Field-tested conversations on architecture, governance, and operating models.",
+          tags: ["Podcast", "AI", "Strategy"],
+          link: "https://podcast.ia.br",
           icon: <Mic size={24} className="text-purple-500" />
         },
         {
           title: "AIMMX",
-          desc: "Solved the 'black box' problem of AI metadata. Engineered a tool to mine software repositories and extract intelligence where none existed before.",
+          desc: "Engineered a way to expose the dark data of AI experimentation. Mines repositories to surface metadata and force rigor into AI supply chains.",
           tags: ["Python", "Hard Tech", "MSR Paper"],
           link: "https://github.com/ibm/aimmx",
           icon: <Code size={24} className="text-blue-500" />
         },
         {
           title: "GeoScience Advisor",
-          desc: "Took a complex research prototype and hardened it for the Oil & Gas industry. Transformed volatility into a stable, productized AI advisor.",
+          desc: "Hardened a volatile research prototype into a production-grade AI advisor for Oil & Gas. Reduced scientific uncertainty into operational decisions.",
           tags: ["AI", "Complex Systems", "Productization"],
-          link: "#",
+          link: "https://www.ibm.com/case-studies/petrobras-geoscience-advisor",
           icon: <Globe size={24} className="text-green-500" />
         }
       ]
     },
     teaching: {
-      title: "Advanced Training",
+      title: "Teaching & Thought Leadership",
       items: [
         {
           title: "Software Engineering Powered by AI",
-          desc: "UNICAMP Extension. Challenging the status quo of software development. We explore how AI breaks traditional paradigms and demands new engineering rigors.",
-          tags: ["UNICAMP", "Advanced", "Disruption"],
+          desc: "UNICAMP Extension. Challenging conventional development by applying AI to rewrite engineering rigor and delivery speed.",
+          tags: ["UNICAMP", "Advanced", "AI Engineering"],
           link: "https://www.extecamp.unicamp.br/dados.asp?sigla=%8El%DF%C2%5E%E3%D8%9E&of=%F7%12%A8",
           icon: <GraduationCap size={24} className="text-red-500" />
         },
         {
           title: "Maratona IA",
-          desc: "Intensive training designed to push your understanding of Artificial Intelligence concepts and applications to the limit.",
-          tags: ["Deep Dive", "AI", "Mastery"],
+          desc: "An intensive program that forces leaders to apply frontier AI in business contexts with measurable outcomes.",
+          tags: ["Executive", "AI", "Delivery"],
           link: "https://maratona.ia.br",
           icon: <BookOpen size={24} className="text-orange-500" />
         }
       ]
     },
     experience: {
-      title: "Battle-Hardened Experience",
+      title: "Experience in the Arena",
       items: [
-        { role: "Research Engineering Manager", company: "IBM Research", period: "2025 - Present", desc: "Leading the charge on applied AI for Hybrid Cloud. Solving critical issues in Guardrails and RAG systems where standard solutions fail." },
-        { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Present", desc: "Challenging leaders to adopt AI Leadership and master Prompt Engineering in complex business environments." },
-        { role: "Senior Research Software Engineer", company: "IBM Research Brazil", period: "2019 - Present", desc: "Architecting automation for cloud infrastructure and leading technical breakthroughs in OSDU." },
+        { role: "Research Engineering Manager", company: "IBM Research Brazil", period: "2025 - Present", desc: "Commanding applied AI programs for Hybrid Cloud. Engineering guardrails, RAG systems, and production AI workflows that withstand enterprise scale." },
+        { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Present", desc: "Equipping executives to lead AI-first strategies, from prompt engineering discipline to product delivery frameworks." },
+        { role: "Senior Research Software Engineer", company: "IBM Research Brazil", period: "2019 - 2025", desc: "Architecting automation for cloud infrastructure and leading technical breakthroughs in OSDU for energy clients." },
         { 
           role: "Software Engineer Researcher (International)", 
           company: "IBM TJ Watson Research Center (NY, USA)", 
           period: "2017 - 2019", 
-          desc: "Deployed to HQ to conquer the 'AI Workflow' chaos. I engineered the tools that forced Data Science experiments into disciplined production pipelines, bridging the impossible gap between researchers and engineers." 
+          desc: "Selected to operate from HQ to engineer the AI workflow stack, forcing research experiments into disciplined production pipelines across global teams." 
         },
-        { role: "Visiting Professor", company: "UNICAMP", period: "2012 - 2016", desc: "Pushing students beyond theory with Agile and Software Engineering extension courses." }
+        { role: "Visiting Professor", company: "UNICAMP", period: "2012 - 2016", desc: "Driving engineers beyond theory with extension courses in Agile and Software Engineering." }
       ]
     },
     mentoring: {
-      title: "Face Your Challenges",
-      subtitle: "Stuck on an 'impossible' problem or career plateau?",
-      text: "I don't do basic coaching. I help professionals break through their hardest technical and career ceilings. If you are ready to tackle the most difficult aspects of Generative AI and Leadership, let's talk.",
-      cta: "Challenge Accepted"
+      title: "Technical Mentoring",
+      subtitle: "Need to break through a hard technical or leadership barrier?",
+      text: "I mentor leaders and principal engineers who must ship frontier technology under business pressure. No generic playbooks; only frameworks that turn complex AI and cloud initiatives into execution.",
+      cta: "Schedule a conversation"
     }
   },
   pt: {
     nav: {
-      about: "A Missão",
+      about: "Missão",
       // projects: "Projetos",
-      media: "Radar",
+      media: "Sinais",
       teaching: "Ensino",
-      contact: "Contato"
+      contact: "Mentoria"
     },
     podcast_feed: {
-      title: "Últimas Transmissões",
-      subtitle: "Direto da Fonte",
-      listen: "Ouvir Transmissão",
-      loading: "Estabelecendo conexão...",
-      error: "Sinal interrompido. Não foi possível carregar o feed."
+      title: "Últimos episódios",
+      subtitle: "Relatos de campo",
+      listen: "Ouvir agora",
+      loading: "Coletando o último sinal...",
+      error: "Sinal perdido. Não foi possível carregar o feed."
     },
     hero: {
-      role: "Gerente de Engenharia Movido por Desafios",
-      subrole: "Domando o Caos & Arquitetando IA",
-      cta: "Veja Como Resolvo Problemas"
+      role: "Executivo de Tecnologia em Deep Tech",
+      // subrole: "Onde engenharia de software, ciência aplicada e negócio se encontram.",
+      cta: "Veja como construo tecnologia defensável"
     },
     about: {
-      title: "O Tradutor Tech-Business",
-      text: "Eu faço a ponte impossível entre a pesquisa profunda e o impacto no mundo real. Meu superpoder é traduzir conceitos técnicos complexos em estratégias de negócios claras e acionáveis. Lidero equipes para conquistar problemas 'insolúveis' em IA e Arquitetura de Nuvem, garantindo que a inovação de ponta faça sentido para a empresa. Se é complexo, indefinido e difícil, é onde eu prospero."
+      title: "Engenharia para Impacto de Mercado",
+      text: "Atuo onde engenharia de software encontra ciência complexa e IA Generativa sai da pesquisa para virar produto. Minha carreira é transformar pesquisas que parecem impraticáveis ou problemas que chamam de insolúveis em tecnologia escalável e lucrativa. Desenho culturas de engenharia que valorizam rigor, colaboração open-source e autonomia para projetar o futuro, não apenas gerenciá-lo."
     },
     stats: [
-      { label: "Palestras Impactantes", value: "100+", icon: <Megaphone size={20} /> },
-      { label: "Patentes Vencidas", value: "15+", icon: <Award size={20} /> },
-      { label: "Artigos Complexos", value: "18+", icon: <FileText size={20} /> },
-      { label: "Anos no Front", value: "20+", icon: <Terminal size={20} /> },
+      { label: "Keynotes críticos", value: "100+", icon: <Megaphone size={20} /> },
+      { label: "Patentes & disclosures", value: "15+", icon: <Award size={20} /> },
+      { label: "Papers revisados", value: "18+", icon: <FileText size={20} /> },
+      { label: "Anos entregando sistemas", value: "20+", icon: <Terminal size={20} /> },
     ],
     eminence: {
-      title: "Vitórias & Reconhecimento",
+      title: "Eminência Técnica",
       items: [
         { 
           title: "IBM Tech 2024", 
@@ -241,46 +241,46 @@ const DATA = {
       ]
     },
     media: {
-      title: "Radar da Indústria",
+      title: "Influência Técnica",
       items: [
         {
-          title: "TDC: Liderança Humanizada & IA",
-          desc: "Ao vivo no The Developer's Conference. Discutindo o impacto da IA nas empresas e o futuro da liderança.",
-          type: "Conferência / Vídeo",
+          title: "TDC: Liderança de Engenharia com IA",
+          desc: "No palco do The Developer's Conference mostrando como estruturar programas de IA que sobrevivem aos limites do mundo real.",
+          type: "Webnair",
           link: "https://www.youtube.com/watch?v=SwQ7JCMaQ9g",
           icon: <Video size={20} className="text-red-600" />
         },
         {
           title: "IA Sob Controle #162",
-          desc: "O que a IBM vem fazendo pelo mercado de IA. Uma conversa profunda sobre estratégia e inovação.",
+          desc: "Dissecando a estratégia de IA da IBM e as disciplinas necessárias para entregar produtos, não apenas apresentações.",
           type: "Podcast",
           link: "https://www.iasobcontrole.tech/162-o-que-a-ibm-vem-fazendo-pelo-mercado-de-la-com-alan-braz/",
           icon: <Mic size={20} className="text-pink-500" />
         },
         {
-          title: "Entrevista Rádio Brasil",
-          desc: "Visão geral do impacto da IA na sociedade e nos negócios. (Entrevista em Vídeo)",
-          type: "TV/Rádio",
+          title: "Entrevista Rádio JP News Campinas",
+          desc: "Como a IA de fronteira altera modelos de negócio e por que governança precisa ser engenharia, não improviso.",
+          type: "TV / Rádio",
           link: "https://www.youtube.com/watch?v=Cbixa3LSXCk",
           icon: <Radio size={20} className="text-blue-500" />
         },
         {
           title: "Seminário PUC-Campinas",
-          desc: "Seminário Internacional Human AI & Education. Discutindo o futuro do aprendizado.",
-          type: "Keynote",
+          desc: "Human AI & Education: convertendo pesquisa acadêmica em sistemas resilientes de IA para a indústria.",
+          type: "Painel",
           link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
           icon: <Video size={20} className="text-red-500" />
         },
         {
           title: "IA Sob Controle #42",
-          desc: "Embeddings da OpenAI, Deepfake do Biden e IA na IBM. Navegando no ruído.",
+          desc: "Sobre entregar IA com responsabilidade: embeddings, deepfakes e a engenharia por trás da abordagem da IBM.",
           type: "Podcast",
           link: "https://www.iasobcontrole.tech/42-novos-modelos-de-embedding-da-openai-deepfake-do-biden-ia-na-ibm/",
           icon: <Mic size={20} className="text-pink-500" />
         },
         {
           title: "Vida com IA #103",
-          desc: "Mergulho profundo em Engenharia de IA e insights de carreira.",
+          desc: "Mergulho técnico em engenharia de IA e em como navegar uma carreira na fronteira.",
           type: "Podcast",
           link: "https://open.spotify.com/episode/40pdjHdfCbNQ7ayBo9f60Q",
           icon: <Play size={20} className="text-green-500" />
@@ -288,74 +288,74 @@ const DATA = {
       ]
     },
     logos: {
-      title: "Onde Já Palestrei",
+      title: "Palcos & Salas de Aula",
       items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "IA Sob Controle", "The Developer's Conference", "CBSoft", "Klabin", "John Deere", "Grupo Brinox"]
     },
     projects: {
-      title: "Resolvendo o Insolúvel",
+      title: "Entregando Hard Tech",
       items: [
         {
           title: "PullreCast Podcast",
-          desc: "Quebrando as barreiras mais complexas da IA Open-Source. Um mergulho profundo na fronteira da produtividade e crescimento de carreira onde profundidade técnica encontra estratégia.",
-          tags: ["Podcast", "GenAI", "Estratégia"],
-          link: "#",
+          desc: "Dissecando como IA de fronteira vira vantagem empresarial. Conversas testadas em campo sobre arquitetura, governança e modelos operacionais.",
+          tags: ["Podcast", "IA", "Estratégia"],
+          link: "https://podcast.ia.br",
           icon: <Mic size={24} className="text-purple-500" />
         },
         {
           title: "AIMMX",
-          desc: "Resolvi o problema 'caixa preta' de metadados de IA. Engenharia de uma ferramenta para minerar repositórios e extrair inteligência onde nada existia antes.",
+          desc: "Engenharia para expor o dado escuro de experimentação em IA. Mina repositórios para gerar metadados e impor rigor nas cadeias de IA.",
           tags: ["Python", "Hard Tech", "MSR Paper"],
           link: "https://github.com/ibm/aimmx",
           icon: <Code size={24} className="text-blue-500" />
         },
         {
           title: "GeoScience Advisor",
-          desc: "Peguei um protótipo de pesquisa complexo e o endureci para a indústria de Óleo & Gás. Transformei volatilidade em um consultor de IA estável e produtizado.",
+          desc: "Endureci um protótipo de pesquisa volátil em um advisor de IA pronto para produção em Óleo & Gás. Reduzi incerteza científica em decisões operacionais.",
           tags: ["IA", "Sistemas Complexos", "Produtização"],
-          link: "#",
+          link: "https://www.ibm.com/case-studies/petrobras-geoscience-advisor",
           icon: <Globe size={24} className="text-green-500" />
         }
       ]
     },
     teaching: {
-      title: "Treinamento de Elite",
+      title: "Ensino & Liderança Intelectual",
       items: [
         {
           title: "Engenharia de Software Potencializada por IA",
-          desc: "Extensão UNICAMP. Desafiando o status quo do desenvolvimento de software. Exploramos como a IA quebra paradigmas tradicionais e exige novos rigores de engenharia.",
-          tags: ["UNICAMP", "Avançado", "Disrupção"],
+          desc: "Extensão UNICAMP. Desafiando o desenvolvimento tradicional ao aplicar IA para reescrever rigor e velocidade de entrega.",
+          tags: ["UNICAMP", "Avançado", "Engenharia de IA"],
           link: "https://www.extecamp.unicamp.br/dados.asp?sigla=%8El%DF%C2%5E%E3%D8%9E&of=%F7%12%A8",
           icon: <GraduationCap size={24} className="text-red-500" />
         },
         {
-          title: "Maratona IA",
-          desc: "Treinamento intensivo projetado para levar seu entendimento de conceitos e aplicações de Inteligência Artificial ao limite.",
-          tags: ["Mergulho Profundo", "IA", "Domínio"],
+          title: "Maratona IA na sua Carreira",
+          desc: "Programa intensivo que força líderes a aplicar IA de fronteira em contextos de negócio com resultados mensuráveis.",
+          tags: ["Todas as carreiras", "IA Generativa", "Prompts"],
           link: "https://maratona.ia.br",
           icon: <BookOpen size={24} className="text-orange-500" />
         }
       ]
     },
     experience: {
-      title: "Experiência de Combate",
+      title: "Experiência em Campo",
       items: [
-        { role: "Gerente de Engenharia de Pesquisa", company: "IBM Research", period: "2025 - Presente", desc: "Liderando a carga em IA aplicada para Nuvem Híbrida. Resolvendo problemas críticos em Guardrails e sistemas RAG onde soluções padrão falham." },
-        { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Presente", desc: "Desafiando líderes a adotar Liderança em IA e dominar Engenharia de Prompt em ambientes de negócios complexos." },
-        { role: "Engenheiro de Software de Pesquisa Sênior", company: "IBM Research Brasil", period: "2019 - Presente", desc: "Arquitetando automação para infraestrutura de nuvem e liderando avanços técnicos no OSDU." },
+        { role: "Gerente de Engenharia em Pesquisa", company: "IBM Research Brasil", period: "2025 - Presente", desc: "Liderando programas de IA aplicada para Nuvem Híbrida. Engenhando guardrails, sistemas RAG e workflows de IA prontos para escala empresarial." },
+        { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Presente", desc: "Preparando executivos para liderar estratégias AI-first, do rigor em prompt engineering aos frameworks de entrega de produto." },
+        { role: "Engenheiro de Software de Pesquisa Sênior", company: "IBM Research Brasil", period: "2019 - 2025", desc: "Arquitetando automação para infraestrutura de nuvem e liderando avanços técnicos no OSDU para clientes de energia." },
         { 
-          role: "Pesquisador de Engenharia de Software (Internacional)", 
+          role: "Pesquisador de Engenharia de Software 🇺🇸", 
           company: "IBM TJ Watson Research Center (NY, EUA)", 
           period: "2017 - 2019", 
-          desc: "Enviado ao QG para conquistar o caos do 'Workflow de IA'. Engenharei as ferramentas que forçaram experimentos de Ciência de Dados em pipelines de produção disciplinados, unindo o abismo impossível entre pesquisadores e engenheiros." 
+          desc: "Selecionado para operar a partir do QG e engenhar o stack de workflows de IA, forçando experimentos de pesquisa a virarem pipelines de produção disciplinados em times globais." 
         },
-        { role: "Professor Visitante", company: "UNICAMP", period: "2012 - 2016", desc: "Levando alunos além da teoria com cursos de extensão em Engenharia de Software e Ágil." }
+        { role: "Professor Visitante", company: "UNICAMP", period: "2012 - 2016", desc: "Levando engenheiros além da teoria com cursos de extensão em Engenharia de Software e Ágil." }
       ]
     },
     mentoring: {
-      title: "Encare Seus Desafios",
-      subtitle: "Preso em um problema 'impossível' ou platô na carreira?",
-      text: "Eu não faço coaching básico. Ajudo profissionais a romperem seus tetos técnicos e de carreira mais difíceis. Se você está pronto para enfrentar os aspectos mais árduos da IA Generativa e Liderança, vamos conversar.",
-      cta: "Aceito o Desafio"
+      title: "Mentoria Técnica",
+      subtitle: "Precisa romper uma barreira técnica ou de liderança?",
+      text: "Eu mentoro líderes técnicos e de negócios que precisam entregar tecnologia de fronteira sob pressão de negócio. Nada de playbooks genéricos; uma experiência individualizada para transformar iniciativas complexas de IA e nuvem em execução.",
+      cta: "Marcar uma conversa"
     }
   }
 };
@@ -427,7 +427,7 @@ const PodcastFeed = ({ lang }) => {
         <div className="flex items-center justify-center p-12 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
           <div className="flex flex-col items-center gap-3 animate-pulse">
              <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-             <span className="text-slate-500 text-sm font-mono">{t.loading}</span>
+             <span className="text-slate-700 text-sm font-mono">{t.loading}</span>
           </div>
         </div>
       ) : (
@@ -461,7 +461,7 @@ const PodcastFeed = ({ lang }) => {
                     {episode.title}
                   </h3>
                   
-                  <p className="text-slate-600 dark:text-slate-400 text-sm line-clamp-3 leading-relaxed">
+                  <p className="text-slate-800 dark:text-slate-300 text-sm line-clamp-3 leading-relaxed">
                     {stripHtml(episode.description)}
                   </p>
 
@@ -497,12 +497,12 @@ const ProjectCard = ({ item }) => (
       </a>
     </div>
     <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h3>
-    <p className="text-slate-600 dark:text-slate-300 mb-4 text-sm leading-relaxed">
+    <p className="text-slate-800 dark:text-slate-300 mb-4 text-sm leading-relaxed">
       {item.desc}
     </p>
     <div className="flex flex-wrap gap-2">
       {item.tags.map((tag, i) => (
-        <span key={i} className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-full">
+        <span key={i} className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-medium rounded-full">
           {tag}
         </span>
       ))}
@@ -525,7 +525,7 @@ const MediaCard = ({ item }) => (
            <ExternalLink size={16} />
          </a>
       </div>
-      <p className="text-slate-500 dark:text-slate-400 text-sm mt-1 leading-snug">
+      <p className="text-slate-700 dark:text-slate-300 text-sm mt-1 leading-snug">
         {item.desc}
       </p>
     </div>
@@ -557,8 +557,8 @@ const ExperienceItem = ({ item, isLast }) => (
         <span className="hidden sm:inline text-slate-300 dark:text-slate-600">•</span>
         <span className="text-blue-600 dark:text-blue-400 font-medium">{item.company}</span>
       </div>
-      <span className="text-sm text-slate-500 dark:text-slate-400 block mb-2">{item.period}</span>
-      <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm max-w-2xl">
+      <span className="text-sm text-slate-700 dark:text-slate-300 block mb-2">{item.period}</span>
+      <p className="text-slate-800 dark:text-slate-300 leading-relaxed text-sm max-w-2xl">
         {item.desc}
       </p>
     </div>
@@ -596,12 +596,12 @@ export default function AlanBrazPortfolio() {
                 <Globe size={16} />
                 {lang.toUpperCase()}
               </button>
-              {/* <button 
+              <button 
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-              </button> */}
+              </button>
             </div>
           </div>
         </nav>
@@ -638,12 +638,12 @@ export default function AlanBrazPortfolio() {
                 <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium">
                   {t.hero.role}
                 </p>
-                <p className="text-lg text-slate-500 dark:text-slate-400 mt-2">
+                {/* <p className="text-lg text-slate-700 dark:text-slate-300 mt-2">
                   {t.hero.subrole}
-                </p>
+                </p> */}
               </div>
 
-              <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-2xl">
+              <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-300 max-w-2xl">
                 {t.about.text}
               </p>
 
@@ -654,7 +654,7 @@ export default function AlanBrazPortfolio() {
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-pink-600"></div>
                     <div className="flex justify-center text-blue-500 mb-1">{stat.icon}</div>
                     <div className="font-bold text-xl text-slate-900 dark:text-white">{stat.value}</div>
-                    <div className="text-xs text-slate-500 uppercase tracking-wider">{stat.label}</div>
+                    <div className="text-xs text-slate-700 uppercase tracking-wider">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -789,7 +789,7 @@ export default function AlanBrazPortfolio() {
         {/* Footer */}
         <footer className="bg-slate-100 dark:bg-slate-900 py-12 mt-20 border-t border-slate-200 dark:border-slate-800">
           <div className="max-w-5xl mx-auto px-6 text-center">
-            <p className="text-slate-500 dark:text-slate-500 mb-4">
+            <p className="text-slate-700 dark:text-slate-400 mb-4">
               &copy; {new Date().getFullYear()} Alan Braz. All rights reserved.
             </p>
             {/* <div className="flex justify-center gap-6 text-sm text-slate-400">

@@ -55,9 +55,9 @@ const DATA = {
       text: "I operate where software engineering meets complex science and generative AI shifts from research to product. My career is built on turning impractical ideas or so-called impossible problems into scalable, profitable technology. I design engineering cultures that value rigor, open-source collaboration, and autonomy to ship the future, not just manage it."
     },
     stats: [
-      { label: "High-stakes keynotes", value: "100+", icon: <Megaphone size={20} /> },
-      { label: "Patents & disclosures", value: "15+", icon: <Award size={20} /> },
-      { label: "Peer-reviewed papers", value: "18+", icon: <FileText size={20} /> },
+      { label: "Talks & Workshops", value: "150+", icon: <Megaphone size={20} /> },
+      { label: "Patents & disclosures", value: "15", icon: <Award size={20} /> },
+      { label: "Peer-reviewed papers", value: "18", icon: <FileText size={20} /> },
       { label: "Years building systems", value: "20+", icon: <Terminal size={20} /> },
     ],
     eminence: {
@@ -125,7 +125,7 @@ const DATA = {
     },
     logos: {
       title: "Stages & Classrooms",
-      items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "IA Sob Controle", "The Developer's Conference", "CBSoft", "Klabin", "John Deere", "Grupo Brinox"]
+      items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "Cidade Empreende", "The Developer's Conference", "CBSoft AIware", "Klabin", "John Deere", "Grupo Brinox", "EXEC"]
     },
     projects: {
       title: "Shipping Hard Tech",
@@ -219,10 +219,10 @@ const DATA = {
       text: "Atuo onde engenharia de software encontra ciência complexa e IA Generativa sai da pesquisa para virar produto. Minha carreira é transformar pesquisas que parecem impraticáveis ou problemas que chamam de insolúveis em tecnologia escalável e lucrativa. Desenho culturas de engenharia que valorizam rigor, colaboração open-source e autonomia para projetar o futuro, não apenas gerenciá-lo."
     },
     stats: [
-      { label: "Keynotes críticos", value: "100+", icon: <Megaphone size={20} /> },
-      { label: "Patentes & disclosures", value: "15+", icon: <Award size={20} /> },
-      { label: "Papers revisados", value: "18+", icon: <FileText size={20} /> },
-      { label: "Anos entregando sistemas", value: "20+", icon: <Terminal size={20} /> },
+      { label: "Palestras e workshops", value: "150+", icon: <Megaphone size={20} /> },
+      { label: "Patentes & disclosures", value: "15", icon: <Award size={20} /> },
+      { label: "Papers revisados", value: "18", icon: <FileText size={20} /> },
+      { label: "Anos entregando software", value: "20+", icon: <Terminal size={20} /> },
     ],
     eminence: {
       title: "Eminência Técnica",
@@ -289,7 +289,7 @@ const DATA = {
     },
     logos: {
       title: "Palcos & Salas de Aula",
-      items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "IA Sob Controle", "The Developer's Conference", "CBSoft", "Klabin", "John Deere", "Grupo Brinox"]
+      items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "Cidade Empreende", "The Developer's Conference", "CBSoft AIware", "Klabin", "John Deere", "Grupo Brinox", "EXEC"]
     },
     projects: {
       title: "Entregando Hard Tech",
@@ -451,7 +451,7 @@ const PodcastFeed = ({ lang }) => {
                 )}
 
                 <div className="flex-1 space-y-2">
-                  <div className="flex items-center gap-2 text-xs font-medium text-slate-400 uppercase tracking-wider">
+                  <div className="flex items-center gap-2 text-xs font-medium text-slate-600 dark:text-slate-300 uppercase tracking-wider">
                      <span>{new Date(episode.pubDate).toLocaleDateString(lang, { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                      <span className="hidden md:inline">•</span>
                      <span className="hidden md:inline">{t.subtitle}</span>
@@ -493,7 +493,7 @@ const ProjectCard = ({ item }) => (
         {item.icon}
       </div>
       <a href={item.link} target="_blank" rel="noopener noreferrer">
-        <ExternalLink size={18} className="text-slate-400 hover:text-blue-500 cursor-pointer" />
+        <ExternalLink size={18} className="text-slate-600 dark:text-slate-200 hover:text-blue-500 cursor-pointer" />
       </a>
     </div>
     <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h3>
@@ -517,13 +517,13 @@ const MediaCard = ({ item }) => (
     </div>
     <div className="flex-1">
       <div className="flex justify-between items-start">
-         <div>
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{item.type}</span>
-            <h4 className="text-base font-bold text-slate-900 dark:text-white leading-tight">{item.title}</h4>
-         </div>
-         <a href={item.link} target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-blue-600 transition-colors">
-           <ExternalLink size={16} />
-         </a>
+        <div>
+           <span className="text-xs font-bold text-slate-500 dark:text-slate-300 uppercase tracking-wider">{item.type}</span>
+           <h4 className="text-base font-bold text-slate-900 dark:text-white leading-tight">{item.title}</h4>
+        </div>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" className="p-2 text-slate-600 dark:text-slate-200 hover:text-blue-600 transition-colors">
+          <ExternalLink size={16} />
+        </a>
       </div>
       <p className="text-slate-700 dark:text-slate-300 text-sm mt-1 leading-snug">
         {item.desc}
@@ -534,10 +534,10 @@ const MediaCard = ({ item }) => (
 
 const LogoWall = ({ title, items }) => (
   <div className="bg-slate-50 dark:bg-slate-900/50 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 text-center">
-    <h3 className="text-lg font-bold text-slate-400 uppercase tracking-widest mb-6">{title}</h3>
+    <h3 className="text-lg font-bold text-slate-600 dark:text-slate-200 uppercase tracking-widest mb-6">{title}</h3>
     <div className="flex flex-wrap justify-center gap-6 md:gap-10">
       {items.map((logo, i) => (
-        <span key={i} className="text-xl md:text-2xl font-bold text-slate-300 dark:text-slate-600 hover:text-slate-500 dark:hover:text-slate-400 transition-colors cursor-default select-none">
+        <span key={i} className="text-xl md:text-2xl font-bold text-slate-600 dark:text-slate-200 hover:text-slate-700 dark:hover:text-slate-300 transition-colors cursor-default select-none">
           {logo}
         </span>
       ))}
@@ -554,7 +554,7 @@ const ExperienceItem = ({ item, isLast }) => (
     <div className="pb-8">
       <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mb-1">
         <h3 className="text-lg font-bold text-slate-900 dark:text-white">{item.role}</h3>
-        <span className="hidden sm:inline text-slate-300 dark:text-slate-600">•</span>
+        <span className="hidden sm:inline text-slate-500 dark:text-slate-300">•</span>
         <span className="text-blue-600 dark:text-blue-400 font-medium">{item.company}</span>
       </div>
       <span className="text-sm text-slate-700 dark:text-slate-300 block mb-2">{item.period}</span>
@@ -596,12 +596,12 @@ export default function AlanBrazPortfolio() {
                 <Globe size={16} />
                 {lang.toUpperCase()}
               </button>
-              <button 
+              {/* <button 
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-              </button>
+              </button> */}
             </div>
           </div>
         </nav>
@@ -654,7 +654,7 @@ export default function AlanBrazPortfolio() {
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-pink-600"></div>
                     <div className="flex justify-center text-blue-500 mb-1">{stat.icon}</div>
                     <div className="font-bold text-xl text-slate-900 dark:text-white">{stat.value}</div>
-                    <div className="text-xs text-slate-700 uppercase tracking-wider">{stat.label}</div>
+                    <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -672,24 +672,26 @@ export default function AlanBrazPortfolio() {
           </section>
 
           {/* NEW SECTION: External Participations & Media */}
-          <section>
+          {lang === 'pt' && (<section>
             <SectionHeader title={t.media.title} icon={<Radio size={24} />} />
             <div className="grid md:grid-cols-2 gap-4">
               {t.media.items.map((item, i) => (
                 <MediaCard key={i} item={item} />
               ))}
             </div>
-          </section>
+          </section>)}
 
-          {/* Teaching & Courses - NEW SECTION */}
-          <section>
-            <SectionHeader title={t.teaching.title} icon={<GraduationCap size={24} />} />
-            <div className="grid md:grid-cols-2 gap-6">
-              {t.teaching.items.map((item, i) => (
-                <ProjectCard key={i} item={item} />
-              ))}
-            </div>
-          </section>
+          {/* Teaching & Courses - NEW SECTION (hidden in EN) */}
+          {lang === 'pt' && (
+            <section>
+              <SectionHeader title={t.teaching.title} icon={<GraduationCap size={24} />} />
+              <div className="grid md:grid-cols-2 gap-6">
+                {t.teaching.items.map((item, i) => (
+                  <ProjectCard key={i} item={item} />
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* NEW SECTION: Logos Wall */}
           <section>
@@ -708,8 +710,8 @@ export default function AlanBrazPortfolio() {
                   {t.eminence.items.map((item, i) => (
                     <div key={i} className="border-l-2 border-blue-500/30 pl-4 hover:border-blue-500 transition-colors">
                       <h4 className="font-semibold text-lg">{item.title}</h4>
-                      {item.desc && <p className="text-slate-300 text-sm mt-1 mb-2 leading-relaxed">{item.desc}</p>}
-                      <div className="text-slate-400 text-xs mt-1 flex justify-between uppercase tracking-wider">
+                      {item.desc && <p className="text-slate-200 text-sm mt-1 mb-2 leading-relaxed">{item.desc}</p>}
+                      <div className="text-slate-300 text-xs mt-1 flex justify-between uppercase tracking-wider">
                         <span>{item.org}</span>
                         <span>{item.year}</span>
                       </div>
@@ -737,7 +739,7 @@ export default function AlanBrazPortfolio() {
           </section>
 
           {/* New Podcast Feed Section */}
-          <PodcastFeed lang={lang} />
+          {lang === 'pt' && (<PodcastFeed lang={lang} />)}
 
           {/* Projects Grid */}
           {/* <section>
@@ -789,7 +791,7 @@ export default function AlanBrazPortfolio() {
         {/* Footer */}
         <footer className="bg-slate-100 dark:bg-slate-900 py-12 mt-20 border-t border-slate-200 dark:border-slate-800">
           <div className="max-w-5xl mx-auto px-6 text-center">
-            <p className="text-slate-700 dark:text-slate-400 mb-4">
+            <p className="text-slate-700 dark:text-slate-300 mb-4">
               &copy; {new Date().getFullYear()} Alan Braz. All rights reserved.
             </p>
             {/* <div className="flex justify-center gap-6 text-sm text-slate-400">

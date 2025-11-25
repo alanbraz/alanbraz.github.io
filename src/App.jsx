@@ -29,6 +29,8 @@ import {
 import speakerImg from './assets/speaker.jpg';
 
 // --- Data & Content Configuration ---
+const RESUME_CHAT_URL = "https://chatgpt.com/g/g-69246c1df0ec8191b36d8d7a8b84c249-alan-braz-liderando-transformacoes-com-ia";
+
 const DATA = {
   en: {
     nav: {
@@ -48,7 +50,8 @@ const DATA = {
     hero: {
       role: "Technology Executive in Deep Tech",
       subrole: "Where software engineering, applied science, and business value converge.",
-      cta: "See how I build defensible technology"
+      cta: "See how I build defensible technology",
+      resume_chat: "Chat with my full resume and experience background with GenAI"
     },
     about: {
       title: "Engineering for Market Impact",
@@ -212,7 +215,8 @@ const DATA = {
     hero: {
       role: "Executivo de Tecnologia em Deep Tech",
       // subrole: "Onde engenharia de software, ciência aplicada e negócio se encontram.",
-      cta: "Veja como construo tecnologia defensável"
+      cta: "Veja como construo tecnologia defensável",
+      resume_chat: "Converse com meu currículo completo com GenAI"
     },
     about: {
       title: "Engenharia para Impacto de Mercado",
@@ -646,6 +650,16 @@ export default function AlanBrazPortfolio() {
               <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-300 max-w-2xl">
                 {t.about.text}
               </p>
+
+              <a 
+                href={RESUME_CHAT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-blue-600 dark:bg-blue-500 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full md:w-auto text-center"
+              >
+                <img src="/chatgpt.svg" alt="ChatGPT logo" className="h-8 w-auto max-h-8 brightness-0 invert" />
+                <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
+              </a>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4">

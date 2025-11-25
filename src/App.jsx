@@ -364,6 +364,23 @@ const DATA = {
   }
 };
 
+const detectDefaultLang = () => {
+  if (typeof navigator === 'undefined') return 'en';
+  const locales = [
+    ...(navigator.languages || []),
+    navigator.language,
+    navigator.userLanguage,
+    Intl.DateTimeFormat().resolvedOptions().locale
+  ]
+    .filter(Boolean)
+    .map((l) => l.toLowerCase());
+
+  const prefersPortuguese = locales.some(
+    (loc) => loc.startsWith('pt') || loc.includes('-br') || loc.includes('_br')
+  );
+  return prefersPortuguese ? 'pt' : 'en';
+};
+
 // --- Components ---
 
 const SocialLink = ({ href, icon, label }) => (
@@ -570,7 +587,7 @@ const ExperienceItem = ({ item, isLast }) => (
 );
 
 export default function AlanBrazPortfolio() {
-  const [lang, setLang] = useState('pt');
+  const [lang, setLang] = useState(() => detectDefaultLang());
   const [darkMode, setDarkMode] = useState(false);
   const t = DATA[lang];
 

@@ -386,6 +386,16 @@ const detectDefaultLang = () => {
   return prefersPortuguese ? 'pt' : 'en';
 };
 
+const SOCIAL_LINKS = [
+  { href: "https://linkedin.com/in/alanbraz", icon: <Linkedin size={20} />, label: { en: "LinkedIn", pt: "LinkedIn" } },
+  { href: "https://podcast.ia.br", icon: <Podcast size={20} />, label: { en: "Spotify", pt: "Spotify" } },
+  { href: "https://comece.ia.br", icon: <MessagesSquare size={20} />, label: { en: "WhatsApp", pt: "WhatsApp" } },
+  { href: "https://github.com/alanbraz", icon: <Github size={20} />, label: { en: "GitHub", pt: "GitHub" } },
+  { href: "https://instagram.com/pullrecast", icon: <Instagram size={20} />, label: { en: "Instagram", pt: "Instagram" } },
+  { href: "mailto:alan@pullrecast.dev", icon: <Mail size={20} />, label: { en: "Email", pt: "Email" } },
+  { href: "/alanbraz_full_resume.pdf", icon: <FileDown size={20} />, label: { en: "Download full resume", pt: "Baixar currículo completo [Inglês]" } },
+];
+
 // --- Components ---
 
 const SocialLink = ({ href, icon, label }) => (
@@ -395,6 +405,7 @@ const SocialLink = ({ href, icon, label }) => (
     rel="noopener noreferrer"
     className="p-3 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-100 dark:hover:bg-blue-900 text-slate-700 dark:text-slate-300 transition-all transform hover:scale-110"
     aria-label={label}
+    title={label}
   >
     {icon}
   </a>
@@ -714,15 +725,14 @@ export default function AlanBrazPortfolio() {
               </div>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <SocialLink href="https://linkedin.com/in/alanbraz" icon={<Linkedin size={20} />} label="LinkedIn" />
-                <SocialLink href="https://podcast.ia.br" icon={<Podcast size={20} />} label="Spotify" />
-                <SocialLink href="https://comece.ia.br" icon={<MessagesSquare size={20} />} label="WhatsApp" />
-                <SocialLink href="https://github.com/alanbraz" icon={<Github size={20} />} label="GitHub" />
-                <SocialLink href="https://instagram.com/pullrecast" icon={<Instagram size={20} />} label="Instagram" />
-                {/* <SocialLink href="https://researcher.ibm.com/researcher/view.php" icon={<BookOpen size={20} />} label="IBM Research" /> */}
-                <SocialLink href="mailto:alan@pullrecast.dev" icon={<Mail size={20} />} label="Email" />
-                <SocialLink href="/alanbraz_full_resume.pdf" icon={<FileDown size={20} />} label="Download full resume" />
-                
+                {SOCIAL_LINKS.map((link) => (
+                  <SocialLink 
+                    key={link.href} 
+                    href={link.href} 
+                    icon={link.icon} 
+                    label={link.label[lang]} 
+                  />
+                ))}
               </div>
             </div>
           </section>

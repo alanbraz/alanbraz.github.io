@@ -17,6 +17,7 @@ import {
   Cpu,
   GraduationCap,
   MessageSquare,
+  Bot,
   Rss,
   Play,
   Radio,
@@ -29,7 +30,8 @@ import {
 import speakerImg from './assets/speaker.jpg';
 
 // --- Data & Content Configuration ---
-const RESUME_CHAT_URL = "https://chatgpt.com/g/g-69246c1df0ec8191b36d8d7a8b84c249-alan-braz-liderando-transformacoes-com-ia";
+// const RESUME_CHAT_URL = "https://chatgpt.com/g/g-69246c1df0ec8191b36d8d7a8b84c249-alan-braz-liderando-transformacoes-com-ia";
+const RESUME_CHAT_URL = "https://cv.alanbraz.com.br";
 
 const DATA = {
   en: {
@@ -674,7 +676,7 @@ export default function AlanBrazPortfolio() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-blue-600 dark:bg-blue-500 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full md:w-auto text-center"
               >
-                <img src="/chatgpt.svg" alt="ChatGPT logo" className="h-8 w-auto max-h-8 brightness-0 invert" />
+                <Bot size={26} aria-hidden="true" />
                 <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
               </a>
 

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { 
   Github, 
   Linkedin, 
-  Mic, 
+  Podcast, 
+  Mic,
   FileText, 
   Award, 
   Globe, 
@@ -107,7 +108,7 @@ const DATA = {
         },
         {
           title: "PUC-Campinas Seminar",
-          desc: "Human AI & Education: turning academic research into resilient AI systems for industry.",
+          desc: "Human AI & Education: turning acadePodcast research into resilient AI systems for industry.",
           type: "Panel",
           link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
           icon: <Video size={20} className="text-red-500" />
@@ -140,7 +141,7 @@ const DATA = {
           desc: "Deconstructing how frontier AI becomes enterprise advantage. Field-tested conversations on architecture, governance, and operating models.",
           tags: ["Podcast", "AI", "Strategy"],
           link: "https://podcast.ia.br",
-          icon: <Mic size={24} className="text-teal-500" />
+          icon: <Podcast size={24} className="text-teal-500" />
         },
         {
           title: "AIMMX",
@@ -273,7 +274,7 @@ const DATA = {
         },
         {
           title: "Seminário PUC-Campinas",
-          desc: "Human AI & Education: convertendo pesquisa acadêmica em sistemas resilientes de IA para a indústria.",
+          desc: "Human AI & Education: convertendo pesquisa acadêPodcasta em sistemas resilientes de IA para a indústria.",
           type: "Painel",
           link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
           icon: <Video size={20} className="text-red-500" />
@@ -306,7 +307,7 @@ const DATA = {
           desc: "Dissecando como IA de fronteira vira vantagem empresarial. Conversas testadas em campo sobre arquitetura, governança e modelos operacionais.",
           tags: ["Podcast", "IA", "Estratégia"],
           link: "https://podcast.ia.br",
-          icon: <Mic size={24} className="text-teal-500" />
+          icon: <Podcast size={24} className="text-teal-500" />
         },
         {
           title: "AIMMX",
@@ -713,7 +714,7 @@ export default function AlanBrazPortfolio() {
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <SocialLink href="https://linkedin.com/in/alanbraz" icon={<Linkedin size={20} />} label="LinkedIn" />
-                <SocialLink href="https://podcast.ia.br" icon={<Mic size={20} />} label="Spotify" />
+                <SocialLink href="https://podcast.ia.br" icon={<Podcast size={20} />} label="Spotify" />
                 <SocialLink href="https://comece.ia.br" icon={<MessagesSquare size={20} />} label="WhatsApp" />
                 <SocialLink href="https://github.com/alanbraz" icon={<Github size={20} />} label="GitHub" />
                 <SocialLink href="https://instagram.com/pullrecast" icon={<Instagram size={20} />} label="Instagram" />
@@ -775,7 +776,7 @@ export default function AlanBrazPortfolio() {
              {/* Quick links / Podcast Highlight */}
              <div className="bg-gradient-to-br from-purple-100 to-blue-100 dark:from-slate-800 dark:to-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-4">
-                  <Mic size={32} className="text-purple-600 dark:text-purple-400" />
+                  <Podcast size={32} className="text-purple-600 dark:text-purple-400" />
                   <span className="text-xs font-bold bg-purple-200 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded uppercase">Podcast</span>
                 </div>
                 <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">PullreCast</h3>

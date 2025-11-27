@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Host: alanbraz.com.br
+Host: alan.ia.br
+Host: braz.ia.br

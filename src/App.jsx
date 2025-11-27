@@ -14,24 +14,23 @@ import {
   Code, 
   Terminal,
   ExternalLink,
-  Cpu,
   GraduationCap,
   MessageSquare,
-  Bot,
+  BotMessageSquare,
   Rss,
   Play,
   Radio,
   Video,
   Megaphone,
   Instagram,
-  Music,
-  MessageCircle
+  MessagesSquare
 } from 'lucide-react';
 import speakerImg from './assets/speaker.jpg';
 
 // --- Data & Content Configuration ---
 // const RESUME_CHAT_URL = "https://chatgpt.com/g/g-69246c1df0ec8191b36d8d7a8b84c249-alan-braz-liderando-transformacoes-com-ia";
 const RESUME_CHAT_URL = "https://cv.alanbraz.com.br";
+const WHATSAPP_CHAT_URL = "https://api.whatsapp.com/send?phone=5519999850853&text=Olá vi o seu site e gostaria de conversar sobre uma palestra com Alan Braz";
 
 const DATA = {
   en: {
@@ -53,7 +52,8 @@ const DATA = {
       role: "Technology Executive in Deep Tech",
       subrole: "Where software engineering, applied science, and business value converge.",
       cta: "See how I build defensible technology",
-      resume_chat: "Chat with my full resume and experience background with GenAI"
+      resume_chat: "Chat with my full resume with GenAI",
+      whatsapp_cta: "Chat with me in WhatsApp"
     },
     about: {
       title: "Engineering for Market Impact",
@@ -140,7 +140,7 @@ const DATA = {
           desc: "Deconstructing how frontier AI becomes enterprise advantage. Field-tested conversations on architecture, governance, and operating models.",
           tags: ["Podcast", "AI", "Strategy"],
           link: "https://podcast.ia.br",
-          icon: <Mic size={24} className="text-purple-500" />
+          icon: <Mic size={24} className="text-teal-500" />
         },
         {
           title: "AIMMX",
@@ -218,7 +218,8 @@ const DATA = {
       role: "Executivo de Tecnologia em Deep Tech",
       // subrole: "Onde engenharia de software, ciência aplicada e negócio se encontram.",
       cta: "Veja como construo tecnologia defensável",
-      resume_chat: "Converse com meu currículo completo com GenAI"
+      resume_chat: "Converse com meu currículo completo com GenAI",
+      whatsapp_cta: "Fale comigo no WhatsApp"
     },
     about: {
       title: "Engenharia para Impacto de Mercado",
@@ -305,7 +306,7 @@ const DATA = {
           desc: "Dissecando como IA de fronteira vira vantagem empresarial. Conversas testadas em campo sobre arquitetura, governança e modelos operacionais.",
           tags: ["Podcast", "IA", "Estratégia"],
           link: "https://podcast.ia.br",
-          icon: <Mic size={24} className="text-purple-500" />
+          icon: <Mic size={24} className="text-teal-500" />
         },
         {
           title: "AIMMX",
@@ -456,7 +457,7 @@ const PodcastFeed = ({ lang }) => {
       ) : (
         <div className="grid gap-4">
           {episodes.map((episode, i) => (
-            <div key={i} className="group bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-purple-500 dark:hover:border-purple-500 transition-all">
+            <div key={i} className="group bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-teal-500 dark:hover:border-teal-500 transition-all">
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 
                 {/* Thumbnail or Date Box Fallback */}
@@ -467,7 +468,7 @@ const PodcastFeed = ({ lang }) => {
                     className="hidden md:block w-32 h-32 object-cover rounded-xl shadow-md shrink-0" 
                   />
                 ) : (
-                  <div className="hidden md:flex flex-col items-center justify-center w-32 h-32 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-purple-700 dark:text-purple-300 shrink-0">
+                  <div className="hidden md:flex flex-col items-center justify-center w-32 h-32 bg-teal-100 dark:bg-teal-900/30 rounded-xl text-teal-700 dark:text-teal-300 shrink-0">
                      <span className="text-xs font-bold uppercase">{new Date(episode.pubDate).toLocaleString(lang, { month: 'short' })}</span>
                      <span className="text-3xl font-bold">{new Date(episode.pubDate).getDate()}</span>
                   </div>
@@ -480,7 +481,7 @@ const PodcastFeed = ({ lang }) => {
                      <span className="hidden md:inline">{t.subtitle}</span>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                     {episode.title}
                   </h3>
                   
@@ -492,9 +493,9 @@ const PodcastFeed = ({ lang }) => {
                     href={episode.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-bold text-purple-600 dark:text-purple-400 mt-2 hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-teal-600 dark:text-teal-400 mt-2 hover:gap-3 transition-all"
                   >
-                    <div className="p-1.5 bg-purple-100 dark:bg-purple-900 rounded-full">
+                    <div className="p-1.5 bg-teal-100 dark:bg-teal-900 rounded-full">
                       <Play size={12} fill="currentColor" />
                     </div>
                     {t.listen}
@@ -607,7 +608,7 @@ export default function AlanBrazPortfolio() {
         {/* Navbar */}
         <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex justify-between items-center">
-            <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-blue-600 to-teal-300 bg-clip-text text-transparent">
               alan.ia.br
             </span>
             
@@ -634,7 +635,7 @@ export default function AlanBrazPortfolio() {
           {/* Hero Section */}
           <section className="flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start">
             <div className="w-full md:w-1/3 shrink-0 relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-teal-300 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden shadow-2xl">
                 <img 
                   src={speakerImg} 
@@ -649,8 +650,9 @@ export default function AlanBrazPortfolio() {
               {/* Floating Badge */}
               <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 p-3 rounded-lg shadow-lg flex items-center gap-2 border border-slate-100 dark:border-slate-700">
                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                 <span className="text-xs font-bold text-slate-900 dark:text-white">Open to Speaking</span>
+                 <span className="text-xs font-bold text-slate-900 dark:text-white">{(lang === 'en' ? 'Open to Speaking' : 'Contrate para palestras')}</span>
               </div>
+
             </div>
 
             <div className="flex-1 text-center md:text-left space-y-6">
@@ -670,15 +672,32 @@ export default function AlanBrazPortfolio() {
                 {t.about.text}
               </p>
 
-              <a 
-                href={RESUME_CHAT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-blue-600 dark:bg-blue-500 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full md:w-auto text-center"
-              >
-                <Bot size={26} aria-hidden="true" />
-                <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-3 w-full">
+                <a 
+                  href={RESUME_CHAT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-blue-600 dark:bg-blue-500 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center"
+                >
+                  <BotMessageSquare size={52} aria-hidden="true" />
+                  <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
+                </a>
+
+                <a
+                  href={WHATSAPP_CHAT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-teal-600 dark:bg-teal-700 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center"
+                >
+                  <img
+                    src="/whatsapp.svg"
+                    alt="WhatsApp"
+                    className="h-8 w-8"
+                    aria-hidden="true"
+                  />
+                  <span className="text-sm leading-snug">{t.hero.whatsapp_cta}</span>
+                </a>
+              </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4">
@@ -695,7 +714,7 @@ export default function AlanBrazPortfolio() {
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <SocialLink href="https://linkedin.com/in/alanbraz" icon={<Linkedin size={20} />} label="LinkedIn" />
                 <SocialLink href="https://podcast.ia.br" icon={<Mic size={20} />} label="Spotify" />
-                <SocialLink href="https://comece.ia.br" icon={<MessageCircle size={20} />} label="WhatsApp" />
+                <SocialLink href="https://comece.ia.br" icon={<MessagesSquare size={20} />} label="WhatsApp" />
                 <SocialLink href="https://github.com/alanbraz" icon={<Github size={20} />} label="GitHub" />
                 <SocialLink href="https://instagram.com/pullrecast" icon={<Instagram size={20} />} label="Instagram" />
                 {/* <SocialLink href="https://researcher.ibm.com/researcher/view.php" icon={<BookOpen size={20} />} label="IBM Research" /> */}
@@ -795,7 +814,7 @@ export default function AlanBrazPortfolio() {
           </section>
 
           {/* Contact & Mentoring - NEW SECTION */}
-          <section className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-3xl p-8 md:p-12 text-center md:text-left relative overflow-hidden">
+          <section className="bg-gradient-to-r from-blue-600 to-teal-300 rounded-3xl p-8 md:p-12 text-center md:text-left relative overflow-hidden">
             <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="space-y-4 max-w-2xl">

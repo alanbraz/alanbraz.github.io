@@ -24,7 +24,8 @@ import {
   Video,
   Megaphone,
   Instagram,
-  MessagesSquare
+  MessagesSquare,
+  FileDown
 } from 'lucide-react';
 import speakerImg from './assets/speaker.jpg';
 
@@ -720,6 +721,8 @@ export default function AlanBrazPortfolio() {
                 <SocialLink href="https://instagram.com/pullrecast" icon={<Instagram size={20} />} label="Instagram" />
                 {/* <SocialLink href="https://researcher.ibm.com/researcher/view.php" icon={<BookOpen size={20} />} label="IBM Research" /> */}
                 <SocialLink href="mailto:alan@pullrecast.dev" icon={<Mail size={20} />} label="Email" />
+                <SocialLink href="/alanbraz_full_resume.pdf" icon={<FileDown size={20} />} label="Download full resume" />
+                
               </div>
             </div>
           </section>

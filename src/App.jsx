@@ -25,7 +25,8 @@ import {
   Megaphone,
   Instagram,
   MessagesSquare,
-  FileDown
+  FileDown,
+  Presentation
 } from 'lucide-react';
 import speakerImg from './assets/speaker.jpg';
 
@@ -394,6 +395,7 @@ const SOCIAL_LINKS = [
   { href: "https://instagram.com/pullrecast", icon: <Instagram size={20} />, label: { en: "Instagram", pt: "Instagram" } },
   { href: "mailto:alan@pullrecast.dev", icon: <Mail size={20} />, label: { en: "Email", pt: "Email" } },
   { href: "/alanbraz_full_resume.pdf", icon: <FileDown size={20} />, label: { en: "Download full resume", pt: "Baixar currículo completo [Inglês]" } },
+  { href: "/Granite-Mellea.pdf", icon: <Presentation size={20} />, label: { en: "Download TN25 slides", pt: "Baixar TN25 slides" } },
 ];
 
 // --- Components ---

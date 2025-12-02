@@ -435,7 +435,7 @@ const PodcastFeed = ({ lang }) => {
     const fetchFeed = async () => {
       try {
         // Using rss2json to convert RSS XML to JSON for client-side consumption
-        const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://anchor.fm/s/b411a8c8/podcast/rss');
+        const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fanchor.fm%2Fs%2Fb411a8c8%2Fpodcast%2Frss&api_key=i6j6dxyipagpit5c0re5kriwol0awey9cclv8h0z&order_dir=desc&count=2');
         const data = await res.json();
         if (data.items) {
           setEpisodes(data.items.slice(0, 2)); // Get top 2 episodes

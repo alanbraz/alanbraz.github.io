@@ -53,14 +53,15 @@ const DATA = {
     },
     hero: {
       role: "Technology Executive in Deep Tech",
-      subrole: "Where software engineering, applied science, and business value converge.",
+      subrole: "Software engineering, applied science, and business value.",
       cta: "See how I build defensible technology",
       resume_chat: "Chat with my full resume with GenAI",
       whatsapp_cta: "Chat with me in WhatsApp"
     },
     about: {
       title: "Engineering for Market Impact",
-      text: "I operate where software engineering meets complex science and generative AI shifts from research to product. My career is built on turning impractical ideas or so-called impossible problems into scalable, profitable technology. I design engineering cultures that value rigor, open-source collaboration, and autonomy to ship the future, not just manage it."
+      text: "AI Engineering leader and Senior Research Software Engineer with 20+ years turning advanced AI and generative AI research into scalable, production-grade platforms for global enterprises. Combines deep hands-on expertise in LLM systems (RAG, guardrails, validation, inference optimization) and hybrid cloud architecture with a strong track record of building and leading high-performance, multidisciplinary engineering teams across IBM Research Brazil and Yorktown Heights/NY headquarters. Master's in Computer Science, has 15 patents and 18 publications, and frequently teaches and speaks to business leaders and executives on how to translate GenAI into real-world business outcomes."
+      // text: "I operate where software engineering meets complex science and generative AI shifts from research to product. My career is built on turning impractical ideas or so-called impossible problems into scalable, profitable technology. I design engineering cultures that value rigor, open-source collaboration, and autonomy to ship the future, not just manage it."
     },
     stats: [
       { label: "Talks & Workshops", value: "150+", icon: <Megaphone size={20} /> },
@@ -219,14 +220,15 @@ const DATA = {
     },
     hero: {
       role: "Executivo de Tecnologia em Deep Tech",
-      // subrole: "Onde engenharia de software, ciência aplicada e negócio se encontram.",
+      subrole: "Engenharia de software, ciência aplicada e valor de negócios.",
       cta: "Veja como construo tecnologia defensável",
       resume_chat: "Converse com meu currículo completo com GenAI",
       whatsapp_cta: "Fale comigo no WhatsApp"
     },
     about: {
       title: "Engenharia para Impacto de Mercado",
-      text: "Atuo onde engenharia de software encontra ciência complexa e IA Generativa sai da pesquisa para virar produto. Minha carreira é transformar pesquisas que parecem impraticáveis ou problemas que chamam de insolúveis em tecnologia escalável e lucrativa. Desenho culturas de engenharia que valorizam rigor, colaboração open-source e autonomia para projetar o futuro, não apenas gerenciá-lo."
+      text: "Líder em Engenharia de IA e Senior Research Software Engineer com mais de 20 anos transformando pesquisa avançada e IA generativa em plataformas escaláveis e prontas para produção para empresas globais. Combina profunda experiência prática em sistemas de LLM (RAG, guardrails, validação, otimização de inferência) e arquitetura híbrida em nuvem com um sólido histórico na construção e liderança de equipes de engenharia multidisciplinares e de alta performance no IBM Research Brasil e na sede de Yorktown Heights/NY. Mestre em Ciência da Computação, possui 15 patentes e 18 publicações, e frequentemente ensina e palestra para líderes e executivos sobre como traduzir GenAI em resultados reais de negócio."
+      // text: "Atuo onde engenharia de software encontra ciência complexa e IA Generativa sai da pesquisa para virar produto. Minha carreira é transformar pesquisas que parecem impraticáveis ou problemas que chamam de insolúveis em tecnologia escalável e lucrativa. Desenho culturas de engenharia que valorizam rigor, colaboração open-source e autonomia para projetar o futuro, não apenas gerenciá-lo."
     },
     stats: [
       { label: "Palestras e workshops", value: "150+", icon: <Megaphone size={20} /> },
@@ -678,9 +680,9 @@ export default function AlanBrazPortfolio() {
                 <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium">
                   {t.hero.role}
                 </p>
-                {/* <p className="text-lg text-slate-700 dark:text-slate-300 mt-2">
+                <p className="text-lg text-slate-700 dark:text-slate-300 mt-2">
                   {t.hero.subrole}
-                </p> */}
+                </p>
               </div>
 
               <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-300 max-w-2xl">

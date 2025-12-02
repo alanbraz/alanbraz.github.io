@@ -85,101 +85,9 @@ const DATA = {
         { title: "Research Division Award (RDA)", org: "IBM Research", year: "Multiple" }
       ]
     },
-    media: {
-      title: "Signals from the Field",
-      items: [
-        {
-          title: "TDC: Engineering Leadership with AI",
-          desc: "On stage at The Developer's Conference detailing how to structure AI programs that survive real-world constraints.",
-          type: "Webnair",
-          link: "https://www.youtube.com/watch?v=SwQ7JCMaQ9g",
-          icon: <Video size={20} className="text-red-600" />
-        },
-        {
-          title: "IA Sob Controle #162",
-          desc: "Deconstructing IBM's strategy for the AI market and the disciplines needed to ship products, not slides.",
-          type: "Podcast",
-          link: "https://www.iasobcontrole.tech/162-o-que-a-ibm-vem-fazendo-pelo-mercado-de-la-com-alan-braz/",
-          icon: <Mic size={20} className="text-pink-500" />
-        },
-        {
-          title: "Rádio Brasil Interview",
-          desc: "How frontier AI changes business models and why governance must be engineered, not improvised.",
-          type: "TV / Radio",
-          link: "https://www.youtube.com/watch?v=Cbixa3LSXCk",
-          icon: <Radio size={20} className="text-blue-500" />
-        },
-        {
-          title: "PUC-Campinas Seminar",
-          desc: "Human AI & Education: turning acadePodcast research into resilient AI systems for industry.",
-          type: "Panel",
-          link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
-          icon: <Video size={20} className="text-red-500" />
-        },
-        {
-          title: "IA Sob Controle #42",
-          desc: "On shipping AI responsibly: embeddings, deepfakes, and the engineering behind IBM's approach.",
-          type: "Podcast",
-          link: "https://www.iasobcontrole.tech/42-novos-modelos-de-embedding-da-openai-deepfake-do-biden-ia-na-ibm/",
-          icon: <Mic size={20} className="text-pink-500" />
-        },
-        {
-          title: "Vida com IA #103",
-          desc: "A technical deep dive into AI engineering and how to navigate a career at the frontier.",
-          type: "Podcast",
-          link: "https://open.spotify.com/episode/40pdjHdfCbNQ7ayBo9f60Q",
-          icon: <Play size={20} className="text-green-500" />
-        }
-      ]
-    },
     logos: {
       title: "Stages & Classrooms",
       items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "Cidade Empreende", "The Developer's Conference", "CBSoft AIware", "Klabin", "John Deere", "Grupo Brinox", "EXEC"]
-    },
-    projects: {
-      title: "Shipping Hard Tech",
-      items: [
-        {
-          title: "PullreCast Podcast",
-          desc: "Deconstructing how frontier AI becomes enterprise advantage. Field-tested conversations on architecture, governance, and operating models.",
-          tags: ["Podcast", "AI", "Strategy"],
-          link: "https://podcast.ia.br",
-          icon: <Podcast size={24} className="text-teal-500" />
-        },
-        {
-          title: "AIMMX",
-          desc: "Engineered a way to expose the dark data of AI experimentation. Mines repositories to surface metadata and force rigor into AI supply chains.",
-          tags: ["Python", "Hard Tech", "MSR Paper"],
-          link: "https://github.com/ibm/aimmx",
-          icon: <Code size={24} className="text-blue-500" />
-        },
-        {
-          title: "GeoScience Advisor",
-          desc: "Hardened a volatile research prototype into a production-grade AI advisor for Oil & Gas. Reduced scientific uncertainty into operational decisions.",
-          tags: ["AI", "Complex Systems", "Productization"],
-          link: "https://www.ibm.com/case-studies/petrobras-geoscience-advisor",
-          icon: <Globe size={24} className="text-green-500" />
-        }
-      ]
-    },
-    teaching: {
-      title: "Teaching & Thought Leadership",
-      items: [
-        {
-          title: "Software Engineering Powered by AI",
-          desc: "UNICAMP Extension. Challenging conventional development by applying AI to rewrite engineering rigor and delivery speed.",
-          tags: ["UNICAMP", "Advanced", "AI Engineering"],
-          link: "https://www.extecamp.unicamp.br/dados.asp?sigla=%8El%DF%C2%5E%E3%D8%9E&of=%F7%12%A8",
-          icon: <GraduationCap size={24} className="text-red-500" />
-        },
-        {
-          title: "Maratona IA",
-          desc: "An intensive program that forces leaders to apply frontier AI in business contexts with measurable outcomes.",
-          tags: ["Executive", "AI", "Delivery"],
-          link: "https://maratona.ia.br",
-          icon: <BookOpen size={24} className="text-orange-500" />
-        }
-      ]
     },
     experience: {
       title: "Experience in the Arena",
@@ -188,7 +96,7 @@ const DATA = {
         { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Present", desc: "Equipping executives to lead AI-first strategies, from prompt engineering discipline to product delivery frameworks." },
         { role: "Senior Research Software Engineer", company: "IBM Research Brazil", period: "2019 - 2025", desc: "Architecting automation for cloud infrastructure and leading technical breakthroughs in OSDU for energy clients." },
         { 
-          role: "Software Engineer Researcher (International)", 
+          role: "Software Engineer Researcher 🇺🇸", 
           company: "IBM TJ Watson Research Center (NY, USA)", 
           period: "2017 - 2019", 
           desc: "Selected to operate from HQ to engineer the AI workflow stack, forcing research experiments into disciplined production pipelines across global teams." 
@@ -256,18 +164,18 @@ const DATA = {
       title: "Influência Técnica",
       items: [
         {
-          title: "TDC: Liderança de Engenharia com IA",
-          desc: "No palco do The Developer's Conference mostrando como estruturar programas de IA que sobrevivem aos limites do mundo real.",
-          type: "Webnair",
-          link: "https://www.youtube.com/watch?v=SwQ7JCMaQ9g",
-          icon: <Video size={20} className="text-red-600" />
-        },
-        {
           title: "IA Sob Controle #162",
           desc: "Dissecando a estratégia de IA da IBM e as disciplinas necessárias para entregar produtos, não apenas apresentações.",
           type: "Podcast",
           link: "https://www.iasobcontrole.tech/162-o-que-a-ibm-vem-fazendo-pelo-mercado-de-la-com-alan-braz/",
           icon: <Mic size={20} className="text-pink-500" />
+        },
+        {
+          title: "Liderança Humanizada e o Impacto da IA",
+          desc: "Podcast do TDC - Tem tempo para Pergunta? - Alan recebe Valéria Baptista, Product Manager na Magalu.", // Na conversa, eles falam a importância da liderança humanizada, a evolução do papel do líder e o impacto da inteligência artificial nas carreiras e nas empresas, com foco em nuvem e segurança.",
+          type: "Videocast",
+          link: "https://www.youtube.com/watch?v=SwQ7JCMaQ9g",
+          icon: <Video size={20} className="text-red-600" />
         },
         {
           title: "Entrevista Rádio JP News Campinas",

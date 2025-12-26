@@ -60,14 +60,14 @@ const DATA = {
     },
     about: {
       title: "Engineering for Market Impact",
-      text: "AI Engineering leader and Senior Research Software Engineer with 20+ years turning advanced AI and generative AI research into scalable, production-grade platforms for global enterprises. Combines deep hands-on expertise in LLM systems (RAG, guardrails, validation, inference optimization) and hybrid cloud architecture with a strong track record of building and leading high-performance, multidisciplinary engineering teams across IBM Research Brazil and Yorktown Heights/NY headquarters. Master's in Computer Science, has 15 patents and 18 publications, and frequently teaches and speaks to business leaders and executives on how to translate GenAI into real-world business outcomes."
+      text: "AI Engineering leader and Senior Research Software Engineer with 25+ years turning advanced AI and generative AI research into scalable, production-grade platforms for global enterprises. Combines deep hands-on expertise in LLM systems (RAG, guardrails, validation, inference optimization) and hybrid cloud architecture with a strong track record of building and leading high-performance, multidisciplinary engineering teams across IBM Research Brazil and Yorktown Heights/NY headquarters. Master's in Computer Science, has 15 patents and 18 publications, and frequently teaches and speaks to business leaders and executives on how to translate GenAI into real-world business outcomes."
       // text: "I operate where software engineering meets complex science and generative AI shifts from research to product. My career is built on turning impractical ideas or so-called impossible problems into scalable, profitable technology. I design engineering cultures that value rigor, open-source collaboration, and autonomy to ship the future, not just manage it."
     },
     stats: [
       { label: "Talks & Workshops", value: "150+", icon: <Megaphone size={20} /> },
       { label: "Patents & disclosures", value: "15", icon: <Award size={20} /> },
       { label: "Peer-reviewed papers", value: "18", icon: <FileText size={20} /> },
-      { label: "Years building systems", value: "20+", icon: <Terminal size={20} /> },
+      { label: "Years building systems", value: "25+", icon: <Terminal size={20} /> },
     ],
     eminence: {
       title: "Technical Eminence",
@@ -92,9 +92,11 @@ const DATA = {
     experience: {
       title: "Experience in the Arena",
       items: [
-        { role: "Research Engineering Manager", company: "IBM Research Brazil", period: "2025 - Present", desc: "Commanding applied AI programs for Hybrid Cloud. Engineering guardrails, RAG systems, and production AI workflows that withstand enterprise scale." },
+        { role: "Lead Generative AI Systems Architect", company: "IBM Consulting, Data & AI Latin America", period: "Dec 2025 - Present", desc: "Designing and delivering end-to-end GenAI solutions by integrating solution and application architecture to drive business impact. Leading technical decisions on LLMs, RAG, and AI agents, ensuring alignment with security, compliance, and enterprise standards, while addressing performance, resilience, and cost efficiency." },
         { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Present", desc: "Equipping executives to lead AI-first strategies, from prompt engineering discipline to product delivery frameworks." },
-        { role: "Senior Research Software Engineer", company: "IBM Research Brazil", period: "2019 - 2025", desc: "Architecting automation for cloud infrastructure and leading technical breakthroughs in OSDU for energy clients." },
+        { role: "Research Engineering Manager", company: "IBM Research Brazil", period: "2023 - 2025", desc: "Commanding applied AI programs for Hybrid Cloud. Engineering guardrails, RAG systems, and production AI workflows that withstand enterprise scale." },
+        { role: "Podcast Co-founder and Host", company: "PullreCast", period: "2022 - Present", desc: "Providing the podcast’s technical, analytical, and strategic foundation, representing the “lab side” with a perspective deeply grounded in research, innovation, and real-world practice" },
+        { role: "Senior Research Software Engineer", company: "IBM Research Brazil", period: "2019 - 2023", desc: "Architecting automation for cloud infrastructure and leading technical breakthroughs in OSDU for energy clients." },
         { 
           role: "Software Engineer Researcher 🇺🇸", 
           company: "IBM TJ Watson Research Center (NY, USA)", 
@@ -142,7 +144,7 @@ const DATA = {
       { label: "Palestras e workshops", value: "150+", icon: <Megaphone size={20} /> },
       { label: "Patentes & disclosures", value: "15", icon: <Award size={20} /> },
       { label: "Papers revisados", value: "18", icon: <FileText size={20} /> },
-      { label: "Anos entregando software", value: "20+", icon: <Terminal size={20} /> },
+      { label: "Anos entregando software", value: "25+", icon: <Terminal size={20} /> },
     ],
     eminence: {
       title: "Eminência Técnica",
@@ -259,9 +261,11 @@ const DATA = {
     experience: {
       title: "Experiência em Campo",
       items: [
-        { role: "Gerente de Engenharia em Pesquisa", company: "IBM Research Brasil", period: "2025 - Presente", desc: "Liderando programas de IA aplicada para Nuvem Híbrida. Engenhando guardrails, sistemas RAG e workflows de IA prontos para escala empresarial." },
+        { role: "Arquiteto Líder de Sistemas de IA Generativa", company: "IBM Consulting, Data & AI Latin America", period: "Dez 2025 - Presente", desc: "Desenhando e entregando soluções GenAI ponta a ponta ao integrar arquitetura de soluções e aplicações para gerar impacto de negócio. Liderando decisões técnicas sobre LLMs, RAG e agentes de IA, garantindo alinhamento com segurança, conformidade e padrões corporativos, além de performance, resiliência e eficiência de custos." },
         { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Presente", desc: "Preparando executivos para liderar estratégias AI-first, do rigor em prompt engineering aos frameworks de entrega de produto." },
-        { role: "Engenheiro de Software de Pesquisa Sênior", company: "IBM Research Brasil", period: "2019 - 2025", desc: "Arquitetando automação para infraestrutura de nuvem e liderando avanços técnicos no OSDU para clientes de energia." },
+        { role: "Gerente de Engenharia em Pesquisa", company: "IBM Research Brasil", period: "2023 - 2025", desc: "Liderando programas de IA aplicada para Nuvem Híbrida. Engenhando guardrails, sistemas RAG e workflows de IA prontos para escala empresarial." },
+        { role: "Cofundador e Host de Podcast", company: "PullreCast", period: "2022 - Presente", desc: "Fornecendo a base técnica, analítica e estratégica do podcast, representando o lado de laboratório com uma perspectiva profundamente ancorada em pesquisa, inovação e prática real." },
+        { role: "Engenheiro de Software de Pesquisa Sênior", company: "IBM Research Brasil", period: "2019 - 2023", desc: "Arquitetando automação para infraestrutura de nuvem e liderando avanços técnicos no OSDU para clientes de energia." },
         { 
           role: "Pesquisador de Engenharia de Software 🇺🇸", 
           company: "IBM TJ Watson Research Center (NY, EUA)", 

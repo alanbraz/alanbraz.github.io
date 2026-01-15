@@ -307,7 +307,7 @@ const SOCIAL_LINKS = [
   { href: "https://comece.ia.br", icon: <MessagesSquare size={20} />, label: { en: "WhatsApp", pt: "WhatsApp" } },
   { href: "https://github.com/alanbraz", icon: <Github size={20} />, label: { en: "GitHub", pt: "GitHub" } },
   { href: "https://instagram.com/pullrecast", icon: <Instagram size={20} />, label: { en: "Instagram", pt: "Instagram" } },
-  { href: "mailto:alan@pullrecast.dev", icon: <Mail size={20} />, label: { en: "Email", pt: "Email" } },
+  { href: "mailto:alan@podcast.ia.br", icon: <Mail size={20} />, label: { en: "Email", pt: "Email" } },
   { href: "/alanbraz_full_resume.pdf", icon: <FileDown size={20} />, label: { en: "Download full resume", pt: "Baixar currículo completo [Inglês]" } },
   // { href: "/Granite-Mellea.pdf", icon: <Presentation size={20} />, label: { en: "Download TN25 slides", pt: "Baixar TN25 slides" } },
 ];
@@ -760,7 +760,7 @@ export default function AlanBrazPortfolio() {
                 </p>
               </div>
               <a 
-                href="mailto:alan@pullrecast.dev?subject=Mentoring%20Inquiry"
+                href="mailto:alan@podcast.ia.br?subject=Mentoring%20Inquiry"
                 className="shrink-0 bg-white text-blue-700 hover:bg-blue-50 font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all flex items-center gap-2"
               >
                 {t.mentoring.cta} <Mail size={20} />

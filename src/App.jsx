@@ -52,8 +52,8 @@ const DATA = {
       error: "Signal lost. Unable to load feed."
     },
     hero: {
-      role: "Technology Executive in Deep Tech",
-      subrole: "Software engineering, applied science, and business value.",
+      // role: "Technology Executive in Deep Tech",
+      role: "Agentic AI Architect, Software engineering, applied science, and business value.",
       cta: "See how I build defensible technology",
       resume_chat: "Chat with my full resume with GenAI",
       whatsapp_cta: "Chat with me in WhatsApp"
@@ -129,8 +129,8 @@ const DATA = {
       error: "Sinal perdido. Não foi possível carregar o feed."
     },
     hero: {
-      role: "Executivo de Tecnologia em Deep Tech",
-      subrole: "Engenharia de software, ciência aplicada e valor de negócios.",
+      // role: "Executivo de Tecnologia em Deep Tech",
+      role: "Arquiteto de IA Agêntica, Engenharia de software, ciência aplicada e valor de negócios.",
       cta: "Veja como construo tecnologia defensável",
       resume_chat: "Converse com meu currículo completo com GenAI",
       whatsapp_cta: "Fale comigo no WhatsApp"
@@ -166,6 +166,13 @@ const DATA = {
       title: "Influência Técnica",
       items: [
         {
+          title: "IA Sob Controle #229",
+          desc: "Comentando a queda das ações da IBM depois no anúncio da Anthropic sobre como o Cloude Code pode modernizar aplicações em COBOL.",
+          type: "Podcast",
+          link: "https://open.spotify.com/episode/6ImA44eWtjNb8JF22U1nks?si=XX4aYZEPSkGi43onNMEYmw&t=1659",
+          icon: <Mic size={20} className="text-pink-500" />
+        },
+        {
           title: "IA Sob Controle #162",
           desc: "Dissecando a estratégia de IA da IBM e as disciplinas necessárias para entregar produtos, não apenas apresentações.",
           type: "Podcast",
@@ -186,13 +193,13 @@ const DATA = {
           link: "https://www.youtube.com/watch?v=Cbixa3LSXCk",
           icon: <Radio size={20} className="text-blue-500" />
         },
-        {
-          title: "Seminário PUC-Campinas",
-          desc: "Human AI & Education: convertendo pesquisa acadêPodcasta em sistemas resilientes de IA para a indústria.",
-          type: "Painel",
-          link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
-          icon: <Video size={20} className="text-red-500" />
-        },
+        // {
+        //   title: "Seminário PUC-Campinas",
+        //   desc: "Human AI & Education: convertendo pesquisa acadêPodcasta em sistemas resilientes de IA para a indústria.",
+        //   type: "Painel",
+        //   link: "https://www.youtube.com/watch?v=hOivpEPPIuE&t=3656s",
+        //   icon: <Video size={20} className="text-red-500" />
+        // },
         {
           title: "IA Sob Controle #42",
           desc: "Sobre entregar IA com responsabilidade: embeddings, deepfakes e a engenharia por trás da abordagem da IBM.",
@@ -592,9 +599,9 @@ export default function AlanBrazPortfolio() {
                 <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium">
                   {t.hero.role}
                 </p>
-                <p className="text-lg text-slate-700 dark:text-slate-300 mt-2">
+                {/*<p className="text-lg text-slate-700 dark:text-slate-300 mt-2">
                   {t.hero.subrole}
-                </p>
+                </p>*/}
               </div>
 
               <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-300 max-w-2xl">

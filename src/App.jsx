@@ -570,25 +570,53 @@ export default function AlanBrazPortfolio() {
           
           {/* Hero Section */}
           <section className="flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start">
-            <div className="w-full md:w-1/3 shrink-0 relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-teal-300 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-              <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden shadow-2xl">
-                <img 
-                  src={speakerImg} 
-                  alt="Alan Braz Speaking at IBM Research Forum" 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  onError={(e) => {
-                    e.target.onerror = null; 
-                    e.target.src = "https://placehold.co/600x800?text=Alan+Braz+Photo";
-                  }}
-                />
-              </div>
-              {/* Floating Badge */}
-              <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 p-3 rounded-lg shadow-lg flex items-center gap-2 border border-slate-100 dark:border-slate-700">
-                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                 <span className="text-xs font-bold text-slate-900 dark:text-white">{(lang === 'en' ? 'Open to Speaking' : 'Contrate para palestras')}</span>
+            <div className="w-full md:w-1/3 shrink-0">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-teal-300 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={speakerImg} 
+                    alt="Alan Braz Speaking at IBM Research Forum" 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    onError={(e) => {
+                      e.target.onerror = null; 
+                      e.target.src = "https://placehold.co/600x800?text=Alan+Braz+Photo";
+                    }}
+                  />
+                </div>
+                {/* Floating Badge */}
+                <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 p-3 rounded-lg shadow-lg flex items-center gap-2 border border-slate-100 dark:border-slate-700">
+                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                   <span className="text-xs font-bold text-slate-900 dark:text-white">{(lang === 'en' ? 'Open to Speaking' : 'Contrate para palestras')}</span>
+                </div>
               </div>
 
+              <div className="mt-14 flex flex-col gap-3 w-full mt-15">
+              <a 
+                href={RESUME_CHAT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-blue-600 dark:bg-blue-500 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full text-center"
+              >
+                <BotMessageSquare size={52} aria-hidden="true" />
+                <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
+              </a>
+
+                <a
+                  href={WHATSAPP_CHAT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-teal-600 dark:bg-teal-700 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full text-center"
+                >
+                  <img
+                    src="/whatsapp.svg"
+                    alt="WhatsApp"
+                    className="h-8 w-8"
+                    aria-hidden="true"
+                  />
+                  <span className="text-sm leading-snug">{t.hero.whatsapp_cta}</span>
+                </a>
+              </div>
             </div>
 
             <div className="flex-1 text-center md:text-left space-y-6">
@@ -607,33 +635,6 @@ export default function AlanBrazPortfolio() {
               <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-300 max-w-2xl">
                 {t.about.text}
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 w-full">
-                <a 
-                  href={RESUME_CHAT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-blue-600 dark:bg-blue-500 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center"
-                >
-                  <BotMessageSquare size={52} aria-hidden="true" />
-                  <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
-                </a>
-
-                <a
-                  href={WHATSAPP_CHAT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-teal-600 dark:bg-teal-700 text-white font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center"
-                >
-                  <img
-                    src="/whatsapp.svg"
-                    alt="WhatsApp"
-                    className="h-8 w-8"
-                    aria-hidden="true"
-                  />
-                  <span className="text-sm leading-snug">{t.hero.whatsapp_cta}</span>
-                </a>
-              </div>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4">

@@ -13,7 +13,6 @@ import {
   BookOpen, 
   Users, 
   Code, 
-  Terminal,
   ExternalLink,
   GraduationCap,
   MessageSquare,
@@ -26,14 +25,16 @@ import {
   Instagram,
   MessagesSquare,
   FileDown,
-  Presentation
+  Presentation,
+  Youtube,
+  Apple
 } from 'lucide-react';
 import speakerImg from './assets/speaker.jpg';
 
 // --- Data & Content Configuration ---
 // const RESUME_CHAT_URL = "https://chatgpt.com/g/g-69246c1df0ec8191b36d8d7a8b84c249-alan-braz-liderando-transformacoes-com-ia";
 const RESUME_CHAT_URL = "https://cv.alanbraz.com.br/?model=alan-braz";
-const WHATSAPP_CHAT_URL = "https://api.whatsapp.com/send?phone=5519999850853&text=Olá vi o seu site e gostaria de conversar sobre uma palestra com Alan Braz";
+const WHATSAPP_CHAT_URL = "https://api.whatsapp.com/send?phone=5519999850853&text=Olá Alan, vi o seu site e gostaria de conversar sobre uma palestra ou workshop sobre IA agêntica.";
 
 const DATA = {
   en: {
@@ -41,6 +42,7 @@ const DATA = {
       about: "Mission",
       projects: "Impact",
       media: "Signals",
+      talks: "Talks",
       teaching: "Teaching",
       contact: "Mentoring"
     },
@@ -53,25 +55,35 @@ const DATA = {
     },
     hero: {
       // role: "Technology Executive in Deep Tech",
-      role: "Agentic AI Architect, Software engineering, applied science, and business value.",
+      role: "Agentic AI Systems Architect, building and evaluating multi-agent systems since 2017.",
       cta: "See how I build defensible technology",
-      resume_chat: "Chat with my full resume with GenAI",
-      whatsapp_cta: "Chat with me in WhatsApp"
+      resume_chat: "Ask my AI agent about my talks & experience",
+      whatsapp_cta: "Book me for a talk on WhatsApp"
     },
     about: {
-      title: "Engineering for Market Impact",
-      text: "AI Engineering leader and Senior Research Software Engineer with 25+ years turning advanced AI and generative AI research into scalable, production-grade platforms for global enterprises. Combines deep hands-on expertise in LLM systems (RAG, guardrails, validation, inference optimization) and hybrid cloud architecture with a strong track record of building and leading high-performance, multidisciplinary engineering teams across IBM Research Brazil and Yorktown Heights/NY headquarters. Master's in Computer Science, has 15 patents and 18 publications, and frequently teaches and speaks to business leaders and executives on how to translate GenAI into real-world business outcomes."
+      title: "Depth, Scale, and Governance",
+      text: "I build AI agents that survive contact with production. I've worked on multi-agent and conversational AI since 2017, before \"agentic AI\" was a category, producing patents in multi-agent coordination, hierarchical model deployment, and black-box evaluation of agents. As Lead Generative AI Systems Architect at IBM Consulting (Latin America), I design and ship end-to-end agentic solutions: LLM orchestration, RAG, guardrails, and agent evaluation frameworks, with security, compliance, resilience, and cost as first-class requirements. Master's in Computer Science from UNICAMP, 15 patents, and 18 publications (h-index 10, 400+ citations), with 2.5 years at IBM Research headquarters in New York. I coordinate the Generative AI tracks at TDC, teach AI to executives at MIT Sloan Management Review Brazil and to developers at Alura, and host the PullreCast podcast."
       // text: "I operate where software engineering meets complex science and generative AI shifts from research to product. My career is built on turning impractical ideas or so-called impossible problems into scalable, profitable technology. I design engineering cultures that value rigor, open-source collaboration, and autonomy to ship the future, not just manage it."
     },
     stats: [
       { label: "Talks & Workshops", value: "150+", icon: <Megaphone size={20} /> },
-      { label: "Patents & disclosures", value: "15", icon: <Award size={20} /> },
-      { label: "Peer-reviewed papers", value: "18", icon: <FileText size={20} /> },
-      { label: "Years building systems", value: "25+", icon: <Terminal size={20} /> },
+      { label: "Patents", value: "15", icon: <Award size={20} /> },
+      { label: "Peer-reviewed papers (h-index 10)", value: "18", icon: <FileText size={20} /> },
+      { label: "Building multi-agent systems since", value: "2017", icon: <BotMessageSquare size={20} /> },
     ],
     eminence: {
       title: "Technical Eminence",
       items: [
+        {
+          title: "IBM Generative & Agentic AI Expert: Architect",
+          org: "IBM",
+          year: "2025"
+        },
+        {
+          title: "Multi-agent & agent evaluation patents",
+          org: "USPTO",
+          year: "2017-2020"
+        },
         { 
           title: "IBM Tech 2024", 
           org: "IBM Corp.", 
@@ -82,34 +94,56 @@ const DATA = {
           org: "IBM Open Innovation Community", 
           year: "2023"
         },
-        { title: "Research Division Award (RDA)", org: "IBM Research", year: "Multiple" }
+        { title: "Research Division Award (RDA), 2x", org: "IBM Research", year: "Multiple" }
       ]
     },
     logos: {
       title: "Stages & Classrooms",
-      items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "Cidade Empreende", "The Developer's Conference", "CBSoft AIware", "Klabin", "John Deere", "Grupo Brinox", "EXEC"]
+      items: ["TDC (The Developer's Conference)", "IBM InterConnect (Las Vegas)", "Agile Conference (Washington, DC)", "SRII Global Conference (San Jose)", "IBM Innovate (Orlando)", "MIT Sloan Management Review Brasil", "Alura", "Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "UNICAMP", "PUC-Campinas", "TechNights (IBM)", "CBSoft AIware", "Rádio JP News"]
+    },
+    talks: {
+      title: "Featured Talks",
+      subtitle: "Anyone can demo an agent. Few can prove it works, know why it fails, or what it costs at scale. Available as keynote, hands-on workshop, or executive briefing.",
+      items: [
+        {
+          title: "Agents That Survive Production",
+          audience: "Technical, for architects & engineering leaders",
+          desc: "Orchestration, guardrails, and the evaluation problem nobody demos. A reference architecture for agentic systems in production and a concrete method to prove your agents actually work, including black-box testing. Grounded in patents and real production systems, not slides.",
+          tags: ["Reference architecture", "Agent evaluation", "Failure modes & cost"],
+          icon: <BotMessageSquare size={24} className="text-blue-500" />
+        },
+        {
+          title: "AI Agents for Your Business",
+          audience: "Executive, for leaders & business owners",
+          desc: "Where AI agents make money and where they waste it. A hype-free, plain-language map of what agents really are (the \"AI employee\" metaphor), the low-risk use cases with real ROI, and the five pitfalls that quietly cost money. You leave with a 30-day plan.",
+          tags: ["No-hype", "Real ROI", "30-day plan"],
+          icon: <Presentation size={24} className="text-teal-500" />
+        }
+      ]
     },
     experience: {
       title: "Experience in the Arena",
       items: [
-        { role: "Lead Generative AI Systems Architect", company: "IBM Consulting, Data & AI Latin America", period: "Dec 2025 - Present", desc: "Designing and delivering end-to-end GenAI solutions by integrating solution and application architecture to drive business impact. Leading technical decisions on LLMs, RAG, and AI agents, ensuring alignment with security, compliance, and enterprise standards, while addressing performance, resilience, and cost efficiency." },
+        { role: "Lead Generative AI Systems Architect", company: "IBM Consulting, Data & AI Latin America", period: "Dec 2025 - Present", desc: "Architect and Subject Matter Expert for AI agent solutions across banking and telecom clients, including multi-agent systems and a voice-enabled, low-latency solution. I design end-to-end agentic AI with IBM watsonx Orchestrate and strategic partners (Azure, Deepgram, ElevenLabs), balancing security, compliance, resilience, cost, and responsible AI." },
         { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Present", desc: "Equipping executives to lead AI-first strategies, from prompt engineering discipline to product delivery frameworks." },
-        { role: "Research Engineering Manager", company: "IBM Research Brazil", period: "2023 - 2025", desc: "Commanding applied AI programs for Hybrid Cloud. Engineering guardrails, RAG systems, and production AI workflows that withstand enterprise scale." },
+        { role: "Guest Lecturer", company: "Alura", period: "2025 - Present", desc: "Teaching developers advanced modules in the Artificial Intelligence career tracks: Advanced RAG techniques with LangChain, and building intelligent agents with LangChain, LangGraph, and LangSmith." },
+        { role: "Research Engineering Manager, AI & Hybrid Cloud", company: "IBM Research Brazil", period: "2023 - 2025", desc: "Led engineering of LLM/agent systems: RAG pipelines, guardrails, inference optimization, and enterprise-grade LLM validation/evaluation frameworks that withstand enterprise scale." },
         { role: "Podcast Co-founder and Host", company: "PullreCast", period: "2022 - Present", desc: "Providing the podcast’s technical, analytical, and strategic foundation, representing the “lab side” with a perspective deeply grounded in research, innovation, and real-world practice" },
-        { role: "Senior Research Software Engineer", company: "IBM Research Brazil", period: "2019 - 2023", desc: "Architecting automation for cloud infrastructure and leading technical breakthroughs in OSDU for energy clients." },
+        { role: "Senior Research Software Engineer & Global Tech Lead", company: "IBM Research Brazil", period: "2019 - 2023", desc: "Productized multi-tenant SaaS on OpenShift/AWS, automated multi-cloud infrastructure, and led the distributed OSDU APIs that became IBM Open Data for Industries and a Schlumberger partnership." },
         { 
-          role: "Software Engineer Researcher 🇺🇸", 
+          role: "Software Engineering Researcher 🇺🇸", 
           company: "IBM TJ Watson Research Center (NY, USA)", 
           period: "2017 - 2019", 
-          desc: "Selected to operate from HQ to engineer the AI workflow stack, forcing research experiments into disciplined production pipelines across global teams." 
+          desc: "Selected to operate from HQ. Co-authored patents and papers on multi-agent conversational architectures and agent evaluation (the foundation of today's agentic AI), and co-maintained the open-source AIMMX (MSR)." 
         },
+        { role: "Software Engineering Researcher, Social Data Analytics", company: "IBM Research Brazil", period: "2013 - 2016", desc: "Architected real-time Big Data pipelines for social analytics during the FIFA World Cup, feeding live TV broadcast apps; earned 2x Research Division Awards." },
         { role: "Visiting Professor", company: "UNICAMP", period: "2012 - 2016", desc: "Driving engineers beyond theory with extension courses in Agile and Software Engineering." }
       ]
     },
     mentoring: {
-      title: "Technical Mentoring",
-      subtitle: "Need to break through a hard technical or leadership barrier?",
-      text: "I mentor leaders and principal engineers who must ship frontier technology under business pressure. No generic playbooks; only frameworks that turn complex AI and cloud initiatives into execution.",
+      title: "Book a Talk or Workshop",
+      subtitle: "Putting AI agents into production and need them to actually work?",
+      text: "I deliver keynotes, hands-on workshops, and executive briefings on agentic AI, grounded in patents and real production systems, not slides. From engineering teams shipping multi-agent systems to boards deciding where AI generates ROI.",
       cta: "Schedule a conversation"
     }
   },
@@ -130,25 +164,35 @@ const DATA = {
     },
     hero: {
       // role: "Executivo de Tecnologia em Deep Tech",
-      role: "Arquiteto de IA Agêntica, Engenharia de software, ciência aplicada e valor de negócios.",
+      role: "Arquiteto de Sistemas de IA Agêntica, construindo e avaliando sistemas multiagentes desde 2017.",
       cta: "Veja como construo tecnologia defensável",
-      resume_chat: "Converse com meu currículo completo com GenAI",
-      whatsapp_cta: "Fale comigo no WhatsApp"
+      resume_chat: "Pergunte ao meu agente de IA sobre palestras & experiência",
+      whatsapp_cta: "Contrate uma palestra pelo WhatsApp"
     },
     about: {
-      title: "Engenharia para Impacto de Mercado",
-      text: "Líder em Engenharia de IA e Senior Research Software Engineer com mais de 20 anos transformando pesquisa avançada e IA generativa em plataformas escaláveis e prontas para produção para empresas globais. Combina profunda experiência prática em sistemas de LLM (RAG, guardrails, validação, otimização de inferência) e arquitetura híbrida em nuvem com um sólido histórico na construção e liderança de equipes de engenharia multidisciplinares e de alta performance no IBM Research Brasil e na sede de Yorktown Heights/NY. Mestre em Ciência da Computação, possui 15 patentes e 18 publicações, e frequentemente ensina e palestra para líderes e executivos sobre como traduzir GenAI em resultados reais de negócio."
+      title: "Profundidade, Escala e Governança",
+      text: "Construo agentes de IA que sobrevivem ao contato com a produção. Trabalho com IA multiagente e conversacional desde 2017, antes de \"IA agêntica\" virar categoria, gerando patentes em coordenação de agentes, deployment hierárquico de modelos e avaliação (black-box testing) de agentes. Como Lead Generative AI Systems Architect na IBM Consulting (América Latina), projeto e entrego soluções agênticas de ponta a ponta: orquestração de LLMs, RAG, guardrails e frameworks de avaliação, com segurança, conformidade, resiliência e custo como requisitos de primeira classe. Mestre em Ciência da Computação pela UNICAMP, 15 patentes e 18 publicações (índice h 10, 400+ citações), com 2,5 anos na sede da IBM Research em Nova York. Coordeno as trilhas de IA Generativa no TDC, ensino IA a executivos na MIT Sloan Management Review Brasil e desenvolvedores na Alura, e ainda apresento o PullreCast."
       // text: "Atuo onde engenharia de software encontra ciência complexa e IA Generativa sai da pesquisa para virar produto. Minha carreira é transformar pesquisas que parecem impraticáveis ou problemas que chamam de insolúveis em tecnologia escalável e lucrativa. Desenho culturas de engenharia que valorizam rigor, colaboração open-source e autonomia para projetar o futuro, não apenas gerenciá-lo."
     },
     stats: [
       { label: "Palestras e workshops", value: "150+", icon: <Megaphone size={20} /> },
-      { label: "Patentes & disclosures", value: "15", icon: <Award size={20} /> },
-      { label: "Papers revisados", value: "18", icon: <FileText size={20} /> },
-      { label: "Anos entregando software", value: "25+", icon: <Terminal size={20} /> },
+      { label: "Patentes", value: "15", icon: <Award size={20} /> },
+      { label: "Papers revisados (índice h 10)", value: "18", icon: <FileText size={20} /> },
+      { label: "Sistemas multiagentes desde", value: "2017", icon: <BotMessageSquare size={20} /> },
     ],
     eminence: {
       title: "Eminência Técnica",
       items: [
+        {
+          title: "IBM Generative & Agentic AI Expert: Architect",
+          org: "IBM",
+          year: "2025"
+        },
+        {
+          title: "Patentes em multiagente & avaliação de agentes",
+          org: "USPTO",
+          year: "2017-2020"
+        },
         { 
           title: "IBM Tech 2024", 
           org: "IBM Corp.", 
@@ -159,7 +203,7 @@ const DATA = {
           org: "IBM Open Innovation Community", 
           year: "2023"
         },
-        { title: "Research Division Award (RDA)", org: "IBM Research", year: "Múltiplos" }
+        { title: "Research Division Award (RDA), 2x", org: "IBM Research", year: "Múltiplos" }
       ]
     },
     media: {
@@ -218,7 +262,27 @@ const DATA = {
     },
     logos: {
       title: "Palcos & Salas de Aula",
-      items: ["Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "MIT Sloan Review", "UNICAMP", "PUC-Campinas", "Rádio JP News", "Cidade Empreende", "The Developer's Conference", "CBSoft AIware", "Klabin", "John Deere", "Grupo Brinox", "EXEC"]
+      items: ["TDC (The Developer's Conference)", "IBM InterConnect (Las Vegas)", "Agile Conference (Washington, DC)", "SRII Global Conference (San Jose)", "IBM Innovate (Orlando)", "MIT Sloan Management Review Brasil", "Alura", "Harvard Business School Online", "Northwestern University", "Fundação Dom Cabral", "UNICAMP", "PUC-Campinas", "TechNights (IBM)", "CBSoft AIware", "Rádio JP News"]
+    },
+    talks: {
+      title: "Palestras em Destaque",
+      subtitle: "Qualquer um demonstra um agente. Poucos conseguem provar que funciona, saber por que falha ou quanto custa em escala. Disponíveis como keynote, workshop hands-on ou briefing executivo.",
+      items: [
+        {
+          title: "Agentes que Sobrevivem à Produção",
+          audience: "Técnica, para arquitetos & líderes de engenharia",
+          desc: "Orquestração, guardrails e o problema de avaliação que ninguém demonstra. Uma arquitetura de referência para sistemas agênticos em produção e um método concreto para provar que seus agentes realmente funcionam, incluindo black-box testing. Baseada em patentes e sistemas reais, não em slides.",
+          tags: ["Arquitetura de referência", "Avaliação de agentes", "Modos de falha & custo"],
+          icon: <BotMessageSquare size={24} className="text-blue-500" />
+        },
+        {
+          title: "Agentes de IA para o Seu Negócio",
+          audience: "Executiva, para líderes & donos de negócio",
+          desc: "Onde agentes de IA geram lucro e onde desperdiçam. Um mapa sem hype, em linguagem simples, do que agentes realmente são (a metáfora do \"funcionário de IA\"), os casos de uso de baixo risco com ROI real e as cinco armadilhas que custam dinheiro silenciosamente. Você sai com um plano de 30 dias.",
+          tags: ["Sem hype", "ROI real", "Plano de 30 dias"],
+          icon: <Presentation size={24} className="text-teal-500" />
+        }
+      ]
     },
     projects: {
       title: "Entregando Hard Tech",
@@ -250,11 +314,11 @@ const DATA = {
       title: "Ensino & Liderança Intelectual",
       items: [
         {
-          title: "Engenharia de Software Potencializada por IA",
-          desc: "Extensão UNICAMP. Desafiando o desenvolvimento tradicional ao aplicar IA para reescrever rigor e velocidade de entrega.",
-          tags: ["UNICAMP", "Avançado", "Engenharia de IA"],
-          link: "https://www.extecamp.unicamp.br/dados.asp?sigla=%8El%DF%C2%5E%E3%D8%9E&of=%F7%12%A8",
-          icon: <GraduationCap size={24} className="text-red-500" />
+          title: "LangChain: Técnicas Avançadas de RAG (Alura)",
+          desc: "Professor convidado nas trilhas de IA da Alura. Módulos avançados de RAG e desenvolvimento de agentes inteligentes com LangChain, LangGraph e LangSmith.",
+          tags: ["Alura", "RAG Avançado", "Agentes / LangGraph"],
+          link: "https://www.alura.com.br/curso-online-langchain-rag-avancado",
+          icon: <BotMessageSquare size={24} className="text-teal-500" />
         },
         {
           title: "Maratona IA na sua Carreira",
@@ -268,24 +332,26 @@ const DATA = {
     experience: {
       title: "Experiência em Campo",
       items: [
-        { role: "Arquiteto Líder de Sistemas de IA Generativa", company: "IBM Consulting, Data & AI Latin America", period: "Dez 2025 - Presente", desc: "Desenhando e entregando soluções GenAI ponta a ponta ao integrar arquitetura de soluções e aplicações para gerar impacto de negócio. Liderando decisões técnicas sobre LLMs, RAG e agentes de IA, garantindo alinhamento com segurança, conformidade e padrões corporativos, além de performance, resiliência e eficiência de custos." },
+        { role: "Arquiteto Líder de Sistemas de IA Generativa", company: "IBM Consulting, Data & AI Latin America", period: "Dez 2025 - Presente", desc: "Arquiteto e Especialista (SME) em soluções de agentes de IA para clientes de bancos e telecom, incluindo sistemas multiagentes e uma solução com voz e baixa latência. Projeto IA agêntica de ponta a ponta com IBM watsonx Orchestrate e parceiros estratégicos (Azure, Deepgram, ElevenLabs), equilibrando segurança, conformidade, resiliência, custo e IA responsável." },
         { role: "Professor", company: "MIT Sloan Management Review Brasil", period: "2025 - Presente", desc: "Preparando executivos para liderar estratégias AI-first, do rigor em prompt engineering aos frameworks de entrega de produto." },
-        { role: "Gerente de Engenharia em Pesquisa", company: "IBM Research Brasil", period: "2023 - 2025", desc: "Liderando programas de IA aplicada para Nuvem Híbrida. Engenhando guardrails, sistemas RAG e workflows de IA prontos para escala empresarial." },
+        { role: "Professor Convidado", company: "Alura", period: "2025 - Presente", desc: "Ensinando desenvolvedores em módulos avançados das trilhas de Inteligência Artificial: técnicas avançadas de RAG com LangChain e desenvolvimento de agentes inteligentes com LangChain, LangGraph e LangSmith." },
+        { role: "Gerente de Engenharia em Pesquisa, IA & Nuvem Híbrida", company: "IBM Research Brasil", period: "2023 - 2025", desc: "Liderei a engenharia de sistemas de LLM/agentes: pipelines de RAG, guardrails, otimização de inferência e frameworks de validação/avaliação de LLMs de nível corporativo, prontos para escala empresarial." },
         { role: "Cofundador e Host de Podcast", company: "PullreCast", period: "2022 - Presente", desc: "Fornecendo a base técnica, analítica e estratégica do podcast, representando o lado de laboratório com uma perspectiva profundamente ancorada em pesquisa, inovação e prática real." },
-        { role: "Engenheiro de Software de Pesquisa Sênior", company: "IBM Research Brasil", period: "2019 - 2023", desc: "Arquitetando automação para infraestrutura de nuvem e liderando avanços técnicos no OSDU para clientes de energia." },
+        { role: "Engenheiro de Software de Pesquisa Sênior & Global Tech Lead", company: "IBM Research Brasil", period: "2019 - 2023", desc: "Produtizei SaaS multi-tenant em OpenShift/AWS, automatizei infraestrutura multi-cloud e liderei as APIs distribuídas do OSDU que viraram o produto IBM Open Data for Industries e uma parceria com a Schlumberger." },
         { 
           role: "Pesquisador de Engenharia de Software 🇺🇸", 
           company: "IBM TJ Watson Research Center (NY, EUA)", 
           period: "2017 - 2019", 
-          desc: "Selecionado para operar a partir do QG e engenhar o stack de workflows de IA, forçando experimentos de pesquisa a virarem pipelines de produção disciplinados em times globais." 
+          desc: "Selecionado para operar a partir do QG. Coautor de patentes e artigos sobre arquiteturas conversacionais multiagente e avaliação de agentes (a base da IA agêntica de hoje), e comantenedor do open-source AIMMX (MSR)." 
         },
+        { role: "Pesquisador de Engenharia de Software, Social Data Analytics", company: "IBM Research Brasil", period: "2013 - 2016", desc: "Arquitetei pipelines de Big Data em tempo real para análise social durante a Copa do Mundo FIFA, alimentando apps de transmissão de TV ao vivo; recebi 2x Research Division Awards." },
         { role: "Professor Visitante", company: "UNICAMP", period: "2012 - 2016", desc: "Levando engenheiros além da teoria com cursos de extensão em Engenharia de Software e Ágil." }
       ]
     },
     mentoring: {
-      title: "Mentoria Técnica",
-      subtitle: "Precisa romper uma barreira técnica ou de liderança?",
-      text: "Eu mentoro líderes técnicos e de negócios que precisam entregar tecnologia de fronteira sob pressão de negócio. Nada de playbooks genéricos; uma experiência individualizada para transformar iniciativas complexas de IA e nuvem em execução.",
+      title: "Contrate uma Palestra ou Workshop",
+      subtitle: "Colocando agentes de IA em produção e precisa que eles realmente funcionem?",
+      text: "Entrego keynotes, workshops hands-on e briefings executivos sobre IA agêntica, baseados em patentes e sistemas reais de produção, não em slides. De times de engenharia entregando sistemas multiagentes a conselhos decidindo onde a IA gera ROI.",
       cta: "Marcar uma conversa"
     }
   }
@@ -587,7 +653,7 @@ export default function AlanBrazPortfolio() {
                 {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 p-3 rounded-lg shadow-lg flex items-center gap-2 border border-slate-100 dark:border-slate-700">
                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                   <span className="text-xs font-bold text-slate-900 dark:text-white">{(lang === 'en' ? 'Open to Speaking' : 'Contrate para palestras')}</span>
+                   <span className="text-xs font-bold text-slate-900 dark:text-white">{(lang === 'en' ? 'Available for talks & workshops' : 'Disponível para palestras & workshops')}</span>
                 </div>
               </div>
 
@@ -688,6 +754,37 @@ export default function AlanBrazPortfolio() {
              <LogoWall title={t.logos.title} items={t.logos.items} />
           </section>
 
+          {/* Signature Talks Section */}
+          <section>
+            <SectionHeader title={t.talks.title} icon={<Mic size={24} />} />
+            <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-3xl leading-relaxed -mt-4">
+              {t.talks.subtitle}
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {t.talks.items.map((item, i) => (
+                <div key={i} className="group relative bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-500 transition-all flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl group-hover:scale-105 transition-transform">
+                      {item.icon}
+                    </div>
+                    <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{item.audience}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{item.title}</h3>
+                  <p className="text-slate-800 dark:text-slate-300 mb-4 text-sm leading-relaxed flex-1">
+                    {item.desc}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {item.tags.map((tag, j) => (
+                      <span key={j} className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-medium rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* Eminence & Awards */}
           <section className="grid md:grid-cols-2 gap-8">
              <div className="bg-slate-900 text-white p-8 rounded-3xl relative overflow-hidden">
@@ -711,20 +808,55 @@ export default function AlanBrazPortfolio() {
              </div>
 
              {/* Quick links / Podcast Highlight */}
-             <div className="bg-gradient-to-br from-purple-100 to-blue-100 dark:from-slate-800 dark:to-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-center">
+             <div className="bg-gradient-to-br from-purple-100 to-blue-100 dark:from-slate-800 dark:to-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-start">
                 <div className="flex items-center gap-3 mb-4">
                   <Podcast size={32} className="text-purple-600 dark:text-purple-400" />
                   <span className="text-xs font-bold bg-purple-200 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded uppercase">Podcast</span>
                 </div>
-                <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">PullreCast</h3>
+                <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">PullreCast Podcast</h3>
                 <p className="text-slate-700 dark:text-slate-300 mb-6">
                   {lang === 'en' 
-                    ? "Join me as we explore the intersection of Open Source and Artificial Intelligence. Available on all major platforms." 
-                    : "Junte-se a mim enquanto exploramos a interseção entre Código Aberto e Inteligência Artificial. Disponível em todas as plataformas."}
+                    ? "The real-world AI podcast for leaders and professionals. I co-host conversations that cut through the hype to explore how generative and agentic AI, open source, and solid engineering translate into real business outcomes. Practical, honest, and grounded in what actually ships to production, with guests from research, industry, and the open-source community. Available on all major platforms." 
+                    : "O podcast de IA da vida real para líderes e profissionais. Coapresento conversas que cortam o hype para explorar como IA generativa e agêntica, código aberto e engenharia sólida se transformam em resultados reais de negócio. Prático, honesto e ancorado no que de fato vai para produção, com convidados da pesquisa, da indústria e da comunidade open source. Disponível em todas as plataformas."}
                 </p>
-                <a href="https://podcast.ia.br" className="inline-flex items-center gap-2 font-semibold text-purple-700 dark:text-purple-400 hover:gap-3 transition-all">
-                  {lang === 'en' ? "Listen Now" : "Ouvir Agora"} <ExternalLink size={16} />
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://open.spotify.com/show/5zHeJgaZsj9WCMXfJoCVmD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-sm shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    aria-label="Spotify"
+                  >
+                    <Podcast size={18} className="text-green-500" /> Spotify
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@pullrecast?sub_confirmation=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-sm shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    aria-label="YouTube"
+                  >
+                    <Youtube size={18} className="text-red-600" /> YouTube
+                  </a>
+                  <a
+                    href="https://podcasts.apple.com/br/podcast/pullrecast-podcast-da-vida-real-para-explorar-ia-do/id1643158720?l=en-GB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-sm shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    aria-label="Apple Podcasts"
+                  >
+                    <Apple size={18} className="text-slate-700 dark:text-slate-200" /> Apple Podcasts
+                  </a>
+                  <a
+                    href="https://podcast.ia.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-sm shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    aria-label="Website"
+                  >
+                    <Globe size={18} className="text-purple-600 dark:text-purple-400" /> podcast.ia.br
+                  </a>
+                </div>
              </div>
           </section>
 

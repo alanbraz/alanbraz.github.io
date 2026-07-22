@@ -79,11 +79,6 @@ const DATA = {
           org: "IBM",
           year: "2025"
         },
-        {
-          title: "Multi-agent & agent evaluation patents",
-          org: "USPTO",
-          year: "2017-2020"
-        },
         { 
           title: "IBM Tech 2024", 
           org: "IBM Corp.", 
@@ -94,7 +89,12 @@ const DATA = {
           org: "IBM Open Innovation Community", 
           year: "2023"
         },
-        { title: "Research Division Award (RDA), 2x", org: "IBM Research", year: "Multiple" }
+        {
+          title: "Multi-agent & agent evaluation patents",
+          org: "USPTO",
+          year: "2017-2020"
+        },
+        { title: "Research Division Award (RDA), 2x", org: "IBM Research", year: "2013,2014" }
       ]
     },
     logos: {
@@ -188,11 +188,6 @@ const DATA = {
           org: "IBM",
           year: "2025"
         },
-        {
-          title: "Patentes em multiagente & avaliação de agentes",
-          org: "USPTO",
-          year: "2017-2020"
-        },
         { 
           title: "IBM Tech 2024", 
           org: "IBM Corp.", 
@@ -203,7 +198,12 @@ const DATA = {
           org: "IBM Open Innovation Community", 
           year: "2023"
         },
-        { title: "Research Division Award (RDA), 2x", org: "IBM Research", year: "Múltiplos" }
+        {
+          title: "Patentes em multiagente & avaliação de agentes",
+          org: "USPTO",
+          year: "2017-2020"
+        },
+        { title: "Research Division Award (RDA), 2x", org: "IBM Research", year: "2013,2014" }
       ]
     },
     media: {
@@ -357,7 +357,16 @@ const DATA = {
   }
 };
 
-const detectDefaultLang = () => {
+const SUPPORTED_LANGS = ['en', 'pt'];
+
+const getLangFromUrl = () => {
+  if (typeof window === 'undefined') return null;
+  const params = new URLSearchParams(window.location.search);
+  const urlLang = (params.get('lang') || '').toLowerCase();
+  return SUPPORTED_LANGS.includes(urlLang) ? urlLang : null;
+};
+
+const detectBrowserLang = () => {
   if (typeof navigator === 'undefined') return 'en';
   const locales = [
     ...(navigator.languages || []),
@@ -373,6 +382,8 @@ const detectDefaultLang = () => {
   );
   return prefersPortuguese ? 'pt' : 'en';
 };
+
+const detectDefaultLang = () => getLangFromUrl() || detectBrowserLang();
 
 const SOCIAL_LINKS = [
   { href: "https://linkedin.com/in/alanbraz", icon: <Linkedin size={20} />, label: { en: "LinkedIn", pt: "LinkedIn" } },
@@ -601,6 +612,28 @@ export default function AlanBrazPortfolio() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(true);
     }
+  }, []);
+
+  // Keep the URL (?lang=) and <html lang> in sync with the selected language
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('lang') !== lang) {
+      url.searchParams.set('lang', lang);
+      window.history.replaceState({}, '', url);
+    }
+    document.documentElement.lang = lang;
+  }, [lang]);
+
+  // Respond to browser back/forward navigation changing the ?lang= param
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const onPopState = () => {
+      const urlLang = getLangFromUrl();
+      if (urlLang) setLang(urlLang);
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
   return (

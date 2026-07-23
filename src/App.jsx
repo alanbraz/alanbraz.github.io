@@ -701,7 +701,7 @@ export default function AlanBrazPortfolio() {
                 <span className="text-sm leading-snug">{t.hero.resume_chat}</span>
               </a>
 
-                <a
+                {/*<a
                   href={WHATSAPP_CHAT_URL}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -714,7 +714,7 @@ export default function AlanBrazPortfolio() {
                     aria-hidden="true"
                   />
                   <span className="text-sm leading-snug">{t.hero.whatsapp_cta}</span>
-                </a>
+                </a>*/}
               </div>
             </div>
 
